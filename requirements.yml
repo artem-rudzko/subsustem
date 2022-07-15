@@ -1,0 +1,21 @@
+
+# - src: https://github.com/gantsign/ansible-role-java
+  # version: master
+  # name: java
+
+# - src: https://github.com/gantsign/ansible-role-maven
+  # version: master
+  # name: maven
+ 
+- src: https://github.com/geerlingguy/ansible-role-docker
+  version: master
+  name: docker
+
+- src: https://github.com/lean-delivery/ansible-role-selenoid
+  version: master
+  name: selenoid
+  
+# - src: https://github.com/emmetog/ansible-jenkins
+  # name: jenkins
+  
+  

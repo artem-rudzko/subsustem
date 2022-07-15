@@ -1,0 +1,15 @@
+---
+- hosts: all
+
+  tasks:
+    - name: Install report portal
+      shell: curl https://raw.githubusercontent.com/reportportal/reportportal/master/docker-compose.yml -o docker-compose.yml
+      warn: false
+      retries: 3
+      delay: 3      
+      
+    - name: Start report portal in daemon mode
+      shell: docker-compose up -d
+      
+    
+  

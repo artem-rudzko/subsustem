@@ -1,0 +1,7 @@
+---
+- hosts: all
+
+  roles:
+    - role: maven
+      maven_version: '3.6.0' 
+  

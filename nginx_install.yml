@@ -1,0 +1,61 @@
+---
+- hosts: all
+
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        update_cache: yes
+
+    - name: Insert text from managing selenoid-ui nginx
+      blockinfile:
+        path: /etc/nginx/sites-available/selenoid-ui.conf
+        create: yes
+        mode: 0644     
+        block: |
+                server {
+                server_name selenoid-ui.local;
+                listen 80;
+                listen [::]:80;
+                location /ws/ {
+                            proxy_pass http://127.0.0.1:8090/ws/;
+                            proxy_http_version 1.1;
+                            proxy_set_header Upgrade $http_upgrade;
+                            proxy_set_header Connection "upgrade";
+                            }
+                location / {
+                            proxy_pass http://127.0.0.1:8090;
+                            }                              
+                      }                      
+
+    - name: Create sim link to selenoid-ui 
+      file:
+        src: /etc/nginx/sites-available/selenoid-ui.conf
+        dest: /etc/nginx/sites-enabled/selenoid-ui.conf
+        state: link
+
+    - name: Insert text from managing from selenoid nginx
+      blockinfile:
+        path: /etc/nginx/sites-available/selenoid.conf
+        create: yes
+        mode: 0644     
+        block: | 
+                server {
+                server_name selenoid;
+                listen 80;
+                location / {
+                            proxy_pass http://127.0.0.1:4444;
+                            }
+                      }
+
+
+    - name: Create sim link to selenoid 
+      file:
+        src: /etc/nginx/sites-available/selenoid.conf
+        dest: /etc/nginx/sites-enabled/selenoid.conf
+        state: link         
+         
+    - name: Reload nginx 
+      shell: nginx -s reload
+
+ 

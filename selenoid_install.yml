@@ -1,0 +1,40 @@
+---
+- hosts: all
+  tasks:
+      
+    - name: Download  cm
+      become: true
+      shell: curl -L -o /vagrant_data/cm https://github.com/aerokube/cm/releases/download/1.8.1/cm_linux_amd64
+
+    # Download cm for linux amd 64 and rename to cm, after move to shring folder
+    - name: Make cm executable
+      shell: chmod +x /vagrant_data/cm 
+      become: true
+      
+    - name: Install selenoid
+      shell:  sudo /vagrant_data/cm selenoid start
+      become: true
+
+    - name: Pull image for chrome
+      shell: docker pull selenoid/chrome:103.0
+      become: true
+
+    - name: Start selenoid
+      shell: docker run -d --name selenoid -p 4444:4444 -v /var/run/docker.sock:/var/run/docker.sock -v /your/directory/config/:/etc/selenoid/:ro aerokube/selenoid:latest-release
+      become: true 
+      
+    - name: Install selenoid-ui
+      shell: docker run -d --name selenoid-ui --link selenoid -p 8090:8080 aerokube/selenoid-ui --selenoid-uri=http://selenoid:4444 --allowed-origin "*" 
+      
+      #This code for updating browsers.json file on remote VM
+    # - name: Update browsers.json file  
+      # replace:
+        # path: /root/.aerokube/selenoid/browsers.json
+        # regexp: '("path": ".+)$'
+        # replace: '\1,\n "volumes": ["/home/vagrant/:/home/vagrant/:ro"]'
+        
+    # - name: Restart selenoid with new configuration
+      # shell: docker restart selenoid   
+  
+    
+  

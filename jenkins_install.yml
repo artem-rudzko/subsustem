@@ -1,0 +1,14 @@
+---
+- hosts: all
+
+  vars:
+    jenkins_version: "2.73.1"
+    jenkins_url: http://jenkins.autoqa.com
+    jenkins_port: 80
+    jenkins_install_via: "docker"
+    jenkins_include_secrets: true
+    jenkins_include_custom_files: true
+    jenkins_home: /data/jenkins
+
+  roles:
+    - jenkins

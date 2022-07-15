@@ -1,0 +1,2253 @@
+[    0.000000] Linux version 4.15.0-188-generic (buildd@lcy02-amd64-058) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #199-Ubuntu SMP Wed Jun 15 20:42:56 UTC 2022 (Ubuntu 4.15.0-188.199-generic 4.15.18)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-188-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: x87 FPU will use FXSAVE
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000011f5fffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.5 present.
+[    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] e820: last_pfn = 0x11f600 max_arch_pfn = 0x400000000
+[    0.000000] MTRR: Disabled
+[    0.000000] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+[    0.000000] CPU MTRRs all blank - virtualized system.
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+[    0.000000] e820: last_pfn = 0xdfff0 max_arch_pfn = 0x400000000
+[    0.000000] found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] RAMDISK: [mem 0x359c7000-0x36cdafff]
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+[    0.000000] ACPI: XSDT 0x00000000DFFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+[    0.000000] ACPI: FACP 0x00000000DFFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+[    0.000000] ACPI: DSDT 0x00000000DFFF0480 002325 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+[    0.000000] ACPI: FACS 0x00000000DFFF0200 000040
+[    0.000000] ACPI: FACS 0x00000000DFFF0200 000040
+[    0.000000] ACPI: APIC 0x00000000DFFF0240 00006C (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+[    0.000000] ACPI: SSDT 0x00000000DFFF02B0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+[    0.000000] ACPI: Reserving FACP table memory at [mem 0xdfff00f0-0xdfff01e3]
+[    0.000000] ACPI: Reserving DSDT table memory at [mem 0xdfff0480-0xdfff27a4]
+[    0.000000] ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+[    0.000000] ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+[    0.000000] ACPI: Reserving APIC table memory at [mem 0xdfff0240-0xdfff02ab]
+[    0.000000] ACPI: Reserving SSDT table memory at [mem 0xdfff02b0-0xdfff047b]
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000011f5fffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x11f5d3000-0x11f5fdfff]
+[    0.000000] kvm-clock: cpu 0, msr 1:1f552001, primary cpu clock
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: using sched offset of 4266127156 cycles
+[    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000011f5fffff]
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+[    0.000000]   node   0: [mem 0x0000000100000000-0x000000011f5fffff]
+[    0.000000] Reserved but unavailable: 104 pages
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000011f5fffff]
+[    0.000000] ACPI: PM-Timer IO Port: 0x4008
+[    0.000000] IOAPIC[0]: apic_id 4, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xdfff0000-0xdfffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xe0000000-0xfebfffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfee01000-0xfffbffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+[    0.000000] e820: [mem 0xe0000000-0xfebfffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on KVM
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.000000] random: get_random_bytes called from start_kernel+0x99/0x500 with crng_init=0
+[    0.000000] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+[    0.000000] percpu: Embedded 50 pages/cpu s167936 r8192 d28672 u524288
+[    0.000000] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1029537
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-188-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+[    0.000000] Memory: 4002616K/4183608K available (12300K kernel code, 2484K rwdata, 4324K rodata, 2468K init, 2724K bss, 180992K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ftrace: allocating 39513 entries in 155 pages
+[    0.004000] Hierarchical RCU implementation.
+[    0.004000] 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=4.
+[    0.004000] 	Tasks RCU enabled.
+[    0.004000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.004000] NR_IRQS: 524544, nr_irqs: 456, preallocated irqs: 16
+[    0.004000] Console: colour VGA+ 80x25
+[    0.004000] console [tty1] enabled
+[    0.004000] console [ttyS0] enabled
+[    0.004000] ACPI: Core revision 20170831
+[    0.004000] ACPI: 2 ACPI AML tables successfully acquired and loaded
+[    0.004000] APIC: Switch to symmetric I/O mode setup
+[    0.004000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.004000] tsc: Detected 2995.210 MHz processor
+[    0.004000] Calibrating delay loop (skipped) preset value.. 5990.42 BogoMIPS (lpj=11980840)
+[    0.004000] pid_max: default: 32768 minimum: 301
+[    0.004000] Security Framework initialized
+[    0.004000] Yama: becoming mindful.
+[    0.004000] AppArmor: AppArmor initialized
+[    0.004000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.004000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.004000] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.004000] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.006008] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.008000] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.008000] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.008000] Spectre V2 : Mitigation: Enhanced IBRS
+[    0.008000] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.008000] Speculative Store Bypass: Vulnerable
+[    0.008000] Freeing SMP alternatives memory: 36K
+[    0.117219] smpboot: CPU0: 11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz (family: 0x6, model: 0x8c, stepping: 0x1)
+[    0.120000] Performance Events: unsupported p6 CPU model 140 no PMU driver, software events only.
+[    0.120000] Hierarchical SRCU implementation.
+[    0.120000] NMI watchdog: Perf event create on CPU 0 failed with -2
+[    0.120000] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.120000] smp: Bringing up secondary CPUs ...
+[    0.120000] x86: Booting SMP configuration:
+[    0.120000] .... node  #0, CPUs:      #1
+[    0.004000] kvm-clock: cpu 1, msr 1:1f552041, secondary cpu clock
+[    0.124000] TSC synchronization [CPU#0 -> CPU#1]:
+[    0.124000] Measured 71681 cycles TSC warp between CPUs, turning off TSC clock.
+[    0.124000] tsc: Marking TSC unstable due to check_tsc_sync_source failed
+[    0.129224]  #2
+[    0.004000] kvm-clock: cpu 2, msr 1:1f552081, secondary cpu clock
+[    0.132798]  #3
+[    0.004000] kvm-clock: cpu 3, msr 1:1f5520c1, secondary cpu clock
+[    0.140183] smp: Brought up 1 node, 4 CPUs
+[    0.144000] smpboot: Max logical packages: 1
+[    0.144000] smpboot: Total of 4 processors activated (23961.68 BogoMIPS)
+[    0.148007] devtmpfs: initialized
+[    0.152000] x86/mm: Memory block size: 128MB
+[    0.152000] evm: security.selinux
+[    0.152000] evm: security.SMACK64
+[    0.152000] evm: security.SMACK64EXEC
+[    0.152000] evm: security.SMACK64TRANSMUTE
+[    0.152000] evm: security.SMACK64MMAP
+[    0.152000] evm: security.apparmor
+[    0.152000] evm: security.ima
+[    0.152000] evm: security.capability
+[    0.153064] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.156000] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.156000] pinctrl core: initialized pinctrl subsystem
+[    0.156000] RTC time: 16:21:47, date: 07/14/22
+[    0.156000] NET: Registered protocol family 16
+[    0.156000] audit: initializing netlink subsys (disabled)
+[    0.156275] audit: type=2000 audit(1657815712.182:1): state=initialized audit_enabled=0 res=1
+[    0.168321] cpuidle: using governor ladder
+[    0.172000] cpuidle: using governor menu
+[    0.172000] ACPI: bus type PCI registered
+[    0.172000] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.172000] PCI: Using configuration type 1 for base access
+[    0.176318] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.184767] ACPI: Added _OSI(Module Device)
+[    0.188000] ACPI: Added _OSI(Processor Device)
+[    0.188000] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.188000] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.188000] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.188000] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.188000] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.188911] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.194949] ACPI: Interpreter enabled
+[    0.196000] ACPI: (supports S0 S5)
+[    0.196000] ACPI: Using IOAPIC for interrupt routing
+[    0.196258] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.200000] ACPI: Enabled 2 GPEs in block 00 to 07
+[    0.220208] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.224000] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+[    0.225411] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    0.228000] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    0.232116] PCI host bridge to bus 0000:00
+[    0.236000] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.236000] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.236000] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.236000] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+[    0.236000] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.244000] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.244000] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.244000] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.244000] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.259637] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+[    0.260000] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+[    0.269291] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+[    0.272370] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+[    0.276000] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+[    0.276000] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+[    0.276000] SCSI subsystem initialized
+[    0.276257] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.279384] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.280000] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.280000] vgaarb: loaded
+[    0.280000] ACPI: bus type USB registered
+[    0.280000] usbcore: registered new interface driver usbfs
+[    0.280000] usbcore: registered new interface driver hub
+[    0.280000] usbcore: registered new device driver usb
+[    0.280210] EDAC MC: Ver: 3.0.0
+[    0.285011] PCI: Using ACPI for IRQ routing
+[    0.288344] NetLabel: Initializing
+[    0.292000] NetLabel:  domain hash size = 128
+[    0.292000] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.292000] NetLabel:  unlabeled traffic allowed by default
+[    0.296455] clocksource: Switched to clocksource kvm-clock
+[    0.300000] VFS: Disk quotas dquot_6.6.0
+[    0.300000] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.300000] AppArmor: AppArmor Filesystem Enabled
+[    0.300000] pnp: PnP ACPI init
+[    0.395042] pnp: PnP ACPI: found 3 devices
+[    0.461711] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.464629] NET: Registered protocol family 2
+[    0.464629] IP idents hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.464629] TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.489527] TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+[    0.489527] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.489527] UDP hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.489527] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.489527] NET: Registered protocol family 1
+[    0.489527] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.489527] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.489527] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.489527] Unpacking initramfs...
+[    0.489633] Freeing initrd memory: 19536K
+[    0.489633] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.489633] software IO TLB: mapped [mem 0xdbff0000-0xdfff0000] (64MB)
+[    0.489633] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2b2c9856fe3, max_idle_ns: 440795264259 ns
+[    0.489633] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.489633] Scanning for low memory corruption every 60 seconds
+[    1.330740] Initialise system trusted keyrings
+[    1.333670] Key type blacklist registered
+[    1.336772] workingset: timestamp_bits=36 max_order=20 bucket_order=0
+[    1.340679] zbud: loaded
+[    1.340679] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.350232] fuse init (API version 7.26)
+[    1.421251] Key type asymmetric registered
+[    1.425239] Asymmetric key parser 'x509' registered
+[    1.425239] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    1.438363] io scheduler noop registered
+[    1.440407] io scheduler deadline registered
+[    1.442104] io scheduler cfq registered (default)
+[    1.448536] ACPI: AC Adapter [AC] (on-line)
+[    1.450712] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    1.455377] ACPI: Power Button [PWRF]
+[    1.457958] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[    1.461817] ACPI: Sleep Button [SLPF]
+[    1.467932] ACPI: Battery Slot [BAT0] (battery present)
+[    1.476201] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    1.516483] 00:02: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    1.557533] Linux agpgart interface v0.103
+[    1.575946] loop: module loaded
+[    1.584976] scsi host0: ata_piix
+[    1.590696] scsi host1: ata_piix
+[    1.592762] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+[    1.594618] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+[    1.594618] tun: Universal TUN/TAP device driver, 1.6
+[    1.606777] PPP generic driver version 2.4.2
+[    1.610301] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.614192] ehci-pci: EHCI PCI platform driver
+[    1.614192] ehci-platform: EHCI generic platform driver
+[    1.614192] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.614192] ohci-pci: OHCI PCI platform driver
+[    1.614192] ohci-platform: OHCI generic platform driver
+[    1.614192] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.614192] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[    1.661065] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.663991] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    1.668850] mousedev: PS/2 mouse device common for all mice
+[    1.682525] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+[    1.686417] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+[    1.686417] i2c /dev entries driver
+[    1.686417] device-mapper: uevent: version 1.0.3
+[    1.716470] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+[    1.729314] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.735379] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[    1.746120] NET: Registered protocol family 10
+[    1.805289] Segment Routing with IPv6
+[    1.809235] NET: Registered protocol family 17
+[    1.821087] Key type dns_resolver registered
+[    1.831096] mce: Using 0 MCE banks
+[    1.834902] RAS: Correctable Errors collector initialized.
+[    1.834902] sched_clock: Marking stable (1830902432, 0)->(3888230174, -2057327742)
+[    1.854050] registered taskstats version 1
+[    1.859383] Loading compiled-in X.509 certificates
+[    1.869552] Loaded X.509 cert 'Build time autogenerated kernel key: b66dc1acf13a39763c2531b24acc94c778f61d5e'
+[    1.878072] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.885535] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.893781] blacklist: Loading compiled-in revocation X.509 certificates
+[    1.907588] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.923871] zswap: loaded using pool lzo/zbud
+[    1.960655] Key type big_key registered
+[    1.968558] Key type trusted registered
+[    1.984470] Key type encrypted registered
+[    1.991808] AppArmor: AppArmor sha1 policy hashing enabled
+[    2.000948] ima: No TPM chip found, activating TPM-bypass! (rc=-19)
+[    2.011790] ima: Allocated hash algorithm: sha1
+[    2.018828] evm: HMAC attrs: 0x1
+[    2.022033]   Magic number: 14:577:388
+[    2.026829] thermal cooling_device3: hash matches
+[    2.038468] rtc_cmos rtc_cmos: setting system clock to 2022-07-14 16:21:49 UTC (1657815709)
+[    2.052407] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    2.062674] EDD information not available.
+[    2.073735] Freeing unused kernel image memory: 2468K
+[    2.104101] Write protecting the kernel read-only data: 20480k
+[    2.113263] Freeing unused kernel image memory: 2008K
+[    2.122565] Freeing unused kernel image memory: 1820K
+[    2.132422] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Loading, please wait...
+starting version 237
+[    2.292051] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    2.300251] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    2.310450] Fusion MPT base driver 3.04.20
+[    2.313821] Copyright (c) 1999-2008 LSI Corporation
+[    2.360760] Fusion MPT SPI Host driver 3.04.20
+[    2.656878] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+[    3.158563] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 02:88:ee:7d:1c:1b
+[    3.169504] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[    3.186816] mptbase: ioc0: Initiating bringup
+[    3.316903] ioc0: LSI53C1030 A0: Capabilities={Initiator}
+[    3.845901] scsi host2: ioc0: LSI53C1030 A0, FwRev=00000000h, Ports=1, MaxQ=256, IRQ=20
+[    4.090925] scsi 2:0:0:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
+[    4.128405] scsi target2:0:0: Beginning Domain Validation
+[    4.143640] scsi target2:0:0: Domain Validation skipping write tests
+[    4.150197] scsi target2:0:0: Ending Domain Validation
+[    4.156210] scsi target2:0:0: asynchronous
+[    4.164374] scsi 2:0:1:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
+[    4.717990] scsi target2:0:1: Beginning Domain Validation
+[    4.746279] scsi target2:0:1: Domain Validation skipping write tests
+[    4.759301] scsi target2:0:1: Ending Domain Validation
+[    4.771865] scsi target2:0:1: asynchronous
+[    4.781446] random: fast init done
+[    4.792966] e1000 0000:00:08.0 eth1: (PCI:33MHz:32-bit) 08:00:27:cb:4f:64
+[    4.793154] random: systemd-udevd: uninitialized urandom read (16 bytes read)
+[    4.802343] e1000 0000:00:08.0 eth1: Intel(R) PRO/1000 Network Connection
+[    4.814248] random: systemd-udevd: uninitialized urandom read (16 bytes read)
+[    4.832420] random: systemd-udevd: uninitialized urandom read (16 bytes read)
+[    4.850486] sd 2:0:0:0: Attached scsi generic sg0 type 0
+[    4.851340] sd 2:0:0:0: [sda] 83886080 512-byte logical blocks: (42.9 GB/40.0 GiB)
+[    4.855997] sd 2:0:1:0: Attached scsi generic sg1 type 0
+[    4.861764] sd 2:0:0:0: [sda] Write Protect is off
+[    4.876236] sd 2:0:0:0: [sda] Incomplete mode parameter data
+[    4.881462] sd 2:0:0:0: [sda] Assuming drive cache: write through
+[    4.886035] sd 2:0:1:0: [sdb] 20480 512-byte logical blocks: (10.5 MB/10.0 MiB)
+[    4.894431] sd 2:0:1:0: [sdb] Write Protect is off
+[    4.896996]  sda: sda1
+[    4.906557] sd 2:0:1:0: [sdb] Incomplete mode parameter data
+[    4.911027] sd 2:0:0:0: [sda] Attached SCSI disk
+[    4.915215] sd 2:0:1:0: [sdb] Assuming drive cache: write through
+[    4.942831] sd 2:0:1:0: [sdb] Attached SCSI disk
+[    4.963311] e1000 0000:00:03.0 enp0s3: renamed from eth0
+[    4.989772] e1000 0000:00:08.0 enp0s8: renamed from eth1
+Begin: Loading essential drivers ... [   10.552265] raid6: sse2x1   gen()  5562 MB/s
+[   10.604926] raid6: sse2x1   xor()  3184 MB/s
+[   10.660225] raid6: sse2x2   gen()  8331 MB/s
+[   10.708246] raid6: sse2x2   xor()  5018 MB/s
+[   10.764692] raid6: sse2x4   gen()  8399 MB/s
+[   10.816458] raid6: sse2x4   xor()  5396 MB/s
+[   10.823068] raid6: using algorithm sse2x4 gen() 8399 MB/s
+[   10.832080] raid6: .... xor() 5396 MB/s, rmw enabled
+[   10.837539] raid6: using ssse3x2 recovery algorithm
+[   10.844545] xor: measuring software checksum speed
+[   16.755060]    prefetch64-sse: -1246364.-296 MB/sec
+[   16.863486]    generic_sse: 39031.000 MB/sec
+[   16.871121] xor: using function: generic_sse (39031.000 MB/sec)
+[   16.885600] async_tx: api initialized (async)
+done.
+Begin: Running /scripts/init-premount ... done.
+Begin: Mounting root file system ... Begin: Running /scripts/local-top ... done.
+Begin: Running /scripts/local-premount ... [   17.035963] Btrfs loaded, crc32c=crc32c-intel
+Scanning for Btrfs filesystems
+done.
+Warning: fsck not present, so skipping root file system
+[   17.119359] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+done.
+Begin: Running /scripts/local-bottom ... done.
+Begin: Running /scripts/init-bottom ... done.
+[   17.463494] ip_tables: (C) 2000-2006 Netfilter Core Team
+[   17.476556] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[   17.489234] systemd[1]: Detected virtualization oracle.
+[   17.492973] systemd[1]: Detected architecture x86-64.
+
+Welcome to [1mUbuntu 18.04.6 LTS[0m!
+
+[   17.563460] systemd[1]: Set hostname to <ubuntu>.
+[   17.578067] systemd[1]: Initializing machine ID from random generator.
+[   17.582291] systemd[1]: Installed transient /etc/machine-id file.
+[   17.917367] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Started Forward Password Requests to Wall Directory Watch.
+[   17.953261] systemd[1]: Created slice User and Session Slice.
+[[0;32m  OK  [0m] Created slice User and Session Slice.
+[   17.959177] systemd[1]: Created slice System Slice.
+[[0;32m  OK  [0m] Created slice System Slice.
+[   17.965440] systemd[1]: Reached target Slices.
+[[0;32m  OK  [0m] Reached target Slices.
+[[0;32m  OK  [0m] Listening on LVM2 poll daemon socket.
+[[0;32m  OK  [0m] Listening on Journal Socket.
+         Starting Load Kernel Modules...
+         Mounting POSIX Message Queue File System...
+[[0;32m  OK  [0m] Reached target Swap.
+[[0;32m  OK  [0m] Listening on LVM2 metadata daemon socket.
+[[0;32m  OK  [0m] Reached target System Time Synchronized.
+         Starting Uncomplicated firewall...
+[   18.002364] Loading iSCSI transport class v2.0-870.
+         Starting Create list of required st…ce nodes for the current kernel...
+[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
+[[0;32m  OK  [0m] Listening on udev Kernel Socket.
+[[0;32m  OK  [0m] Listening on Network Service Netlink Socket.
+[[0;32m  OK  [0m] Listening on Syslog Socket.
+[[0;32m  OK  [0m] Listening on udev Control Socket.
+         Mounting Huge Pages File System...
+         Starting udev Coldplug all Devices...
+[[0;32m  OK  [0m] Set up automount Arbitrary Executab…rmats File System Automount Point.
+[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+[[0;32m  OK  [0m] Listening on fsck to fsckd communication Socket.
+         Starting File System Check on Root Device...
+         Mounting Kernel Debug File System...
+[[0;32m  OK  [0m] Listening on Journal Audit Socket.
+         Starting Journal Service...
+[[0;32m  OK  [0m] Listening on Device-mapper event daemon FIFOs.
+         Starting Monitoring of LVM2 mirrors…ng dmeventd or progress polling...
+[[0;32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+         Starting Set the console keyboard layout...
+[[0;32m  OK  [0m] Reached target User and Group Name Lookups.
+[[0;32m  OK  [0m] Mounted POSIX Message Queue File System.
+[[0;32m  OK  [0m] Started Uncomplicated firewall.
+[[0;32m  OK  [0m] Started Create list of required sta…vice nodes for the current kernel.
+[[0;32m  OK  [0m] Mounted Huge Pages File System.
+[[0;32m  OK  [0m] Mounted Kernel Debug File System.
+         Starting Create Static Device Nodes in /dev...
+[[0;32m  OK  [0m] Started udev Coldplug all Devices.
+[   18.733315] iscsi: registered transport (tcp)
+[[0;32m  OK  [0m] Started File System Check Daemon to report status.
+[[0;32m  OK  [0m] Started LVM2 metadata daemon.
+[[0;32m  OK  [0m] Started Create Static Device Nodes in /dev.
+[[0;32m  OK  [0m] Started Journal Service.
+[[0;32m  OK  [0m] Started File System Check on Root Device.
+         Starting Remount Root and Kernel File Systems...
+[[0;32m  OK  [0m] Started Monitoring of LVM2 mirrors,…sing dmeventd or progress polling.
+[   19.050122] EXT4-fs (sda1): re-mounted. Opts: (null)
+[[0;32m  OK  [0m] Started Remount Root and Kernel File Systems.
+         Starting Flush Journal to Persistent Storage...
+[   19.090238] iscsi: registered transport (iser)
+         Starting udev Kernel Device Manager...
+         Starting Load/Save Random Seed...
+[[0;32m  OK  [0m] Started Load Kernel Modules.
+         Starting Apply Kernel Variables...
+         Mounting FUSE Control File System...
+         Mounting Kernel Configuration File System...
+[[0;32m  OK  [0m] Started Load/Save Random Seed.
+[[0;32m  OK  [0m] Mounted FUSE Control File System.
+[[0;32m  OK  [0m] Mounted Kernel Configuration File System.
+[   19.148139] systemd-journald[418]: Received request to flush runtime journal from PID 1
+[[0;32m  OK  [0m] Started Apply Kernel Variables.
+[[0;32m  OK  [0m] Started udev Kernel Device Manager.
+[[0;32m  OK  [0m] Found device /dev/ttyS0.
+[[0;32m  OK  [0m] Started Flush Journal to Persistent Storage.
+[[0;32m  OK  [0m] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+[[0;32m  OK  [0m] Started Set the console keyboard layout.
+[[0;32m  OK  [0m] Reached target Local File Systems (Pre).
+[[0;32m  OK  [0m] Reached target Local File Systems.
+         Starting Tell Plymouth To Write Out Runtime Data...
+         Starting AppArmor initialization...
+         Starting Set console font and keymap...
+         Starting ebtables ruleset management...
+         Starting Create Volatile Files and Directories...
+         Starting Commit a transient machine-id on disk...
+[[0;32m  OK  [0m] Started Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Reached target Local Encrypted Volumes.
+[[0;32m  OK  [0m] Started Tell Plymouth To Write Out Runtime Data.
+[[0;32m  OK  [0m] Started Set console font and keymap.
+[[0;32m  OK  [0m] Started Create Volatile Files and Directories.
+         Starting Update UTMP about System Boot/Shutdown...
+[[0;32m  OK  [0m] Started Update UTMP about System Boot/Shutdown.
+[[0;32m  OK  [0m] Started ebtables ruleset management.
+[[0;32m  OK  [0m] Started Commit a transient machine-id on disk.
+[[0;32m  OK  [0m] Started AppArmor initialization.
+         Starting Initial cloud-init job (pre-networking)...
+         Starting Load AppArmor profiles managed internally by snapd...
+[[0;32m  OK  [0m] Started Load AppArmor profiles managed internally by snapd.
+[   24.668361] cloud-init[627]: Cloud-init v. 22.2-0ubuntu1~18.04.3 running 'init-local' at Thu, 14 Jul 2022 16:22:11 +0000. Up 24.09 seconds.
+[[0;32m  OK  [0m] Started Initial cloud-init job (pre-networking).
+[[0;32m  OK  [0m] Reached target Network (Pre).
+         Starting Network Service...
+[[0;32m  OK  [0m] Started Network Service.
+         Starting Wait for Network to be Configured...
+         Starting Network Name Resolution...
+[[0;32m  OK  [0m] Started Network Name Resolution.
+[[0;32m  OK  [0m] Reached target Host and Network Name Lookups.
+[[0;32m  OK  [0m] Reached target Network.
+[[0;32m  OK  [0m] Started Wait for Network to be Configured.
+         Starting Initial cloud-init job (metadata service crawler)...
+[   27.583422] cloud-init[758]: Cloud-init v. 22.2-0ubuntu1~18.04.3 running 'init' at Thu, 14 Jul 2022 16:22:14 +0000. Up 27.31 seconds.
+[   27.594857] cloud-init[758]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
+[   27.608524] cloud-init[758]: ci-info: +--------+-------+----------------------------+---------------+--------+-------------------+
+[   27.617225] cloud-init[758]: ci-info: | Device |   Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+[   27.625211] cloud-init[758]: ci-info: +--------+-------+----------------------------+---------------+--------+-------------------+
+[   27.632806] cloud-init[758]: ci-info: | enp0s3 |  True |         10.0.2.15          | 255.255.255.0 | global | 02:88:ee:7d:1c:1b |
+[   27.638378] cloud-init[758]: ci-info: | enp0s3 |  True | fe80::88:eeff:fe7d:1c1b/64 |       .       |  link  | 02:88:ee:7d:1c:1b |
+[   27.642839] cloud-init[758]: ci-info: | enp0s8 | False |             .              |       .       |   .    | 08:00:27:cb:4f:64 |
+[   27.647961] cloud-init[758]: ci-info: |   lo   |  True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+[   27.651434] cloud-init[758]: ci-info: |   lo   |  True |          ::1/128           |       .       |  host  |         .         |
+[   27.682774] cloud-init[758]: ci-info: +--------+-------+----------------------------+---------------+--------+-------------------+
+[   27.693833] cloud-init[758]: ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+[   27.701660] cloud-init[758]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[   27.708525] cloud-init[758]: ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+[   27.714313] cloud-init[758]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[   27.721189] cloud-init[758]: ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |   enp0s3  |   UG  |
+[   27.725382] cloud-init[758]: ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |   enp0s3  |   U   |
+[   27.740617] cloud-init[758]: ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |   enp0s3  |   UH  |
+[   27.743817] cloud-init[758]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[   27.746455] cloud-init[758]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+[   27.748775] cloud-init[758]: ci-info: +-------+-------------+---------+-----------+-------+
+[   27.751144] cloud-init[758]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+[   27.764941] cloud-init[758]: ci-info: +-------+-------------+---------+-----------+-------+
+[   27.767303] cloud-init[758]: ci-info: |   1   |  fe80::/64  |    ::   |   enp0s3  |   U   |
+[   27.772635] cloud-init[758]: ci-info: |   3   |    local    |    ::   |   enp0s3  |   U   |
+[   27.778926] cloud-init[758]: ci-info: |   4   |   ff00::/8  |    ::   |   enp0s3  |   U   |
+[   27.784323] cloud-init[758]: ci-info: +-------+-------------+---------+-----------+-------+
+[   28.672827] cloud-init[758]: Generating public/private rsa key pair.
+[   28.677950] cloud-init[758]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+[   28.687271] cloud-init[758]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+[   28.693517] cloud-init[758]: The key fingerprint is:
+[   28.697811] cloud-init[758]: SHA256:WYHcg3UPQkajsk38mxa25RpJLVZpEWXOmK4+vbtABbQ root@ubuntu-bionic
+[   28.705771] cloud-init[758]: The key's randomart image is:
+[   28.710277] cloud-init[758]: +---[RSA 2048]----+
+[   28.714218] cloud-init[758]: |       . O@ =oo  |
+[   28.718988] cloud-init[758]: |       .+ooB @   |
+[   28.722960] cloud-init[758]: |      . + E.B +  |
+[   28.727472] cloud-init[758]: |       = + *     |
+[   28.730881] cloud-init[758]: |      . S O +    |
+[   28.733867] cloud-init[758]: |         = @     |
+[   28.736274] cloud-init[758]: |          X..    |
+[   28.738567] cloud-init[758]: |         o.+.    |
+[   28.740718] cloud-init[758]: |          o.++   |
+[   28.742804] cloud-init[758]: +----[SHA256]-----+
+[   28.745340] cloud-init[758]: Generating public/private dsa key pair.
+[   28.747607] cloud-init[758]: Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
+[   28.750555] cloud-init[758]: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
+[[0;32m  OK  [0m] Started Initial cloud-init job (metadata service crawler).
+[   28.763457] cloud-init[758]: The key fingerprint is:
+[   28.766050] [cloud-init[0;32m  OK  [0m[758]: ] SHA256:7HsKynDsMekff+vWsBNah81VRkp4sIZLNbHBfnwQLfk root@ubuntu-bionicReached target System Initialization.
+
+[[0;32m  OK  [0m] Started Daily apt download activities.
+[   28.782466] cloud-init[758]: The key's randomart image is:
+[[0;32m  OK  [0m] Started Daily Cleanup of Temporary Directories.
+[[   28.782552] [0;32m  OK  [0mcloud-init] [758]: Started Message of the Day.+---[DSA 1024]----+
+
+[[0;32m  OK  [0m] Listening on cloud-init hotplug hook socket.
+[   28.787743] cloud-init[758]: |           .*+o=.|
+[   28.790203] cloud-init[758]: |           oo*=.+|
+[[0;32m  OK  [0m] Listening on Open-iSCSI iscsid Socket.
+[   28.790265] cloud-init[758]: |          o.+o.* |
+[   28.795651] cloud-init[758]: |       . . o. + E|
+         Starting LXD - unix socket.
+[   28.799402] cloud-init[758]: |        S .+ o . |
+[[0;32m  OK  [0m] Listening on UUID daemon activation socket.
+[   28.801468] cloud-init[758]: |   . . .  = +    |
+[[0;32m  OK  [0m] Started Ubuntu Advantage Timer for running repeated jobs.
+[   28.808553] cloud-init[758]: |  . * o .o *     |
+[[0;32m  OK  [0m] Started Discard unused blocks once a week.
+[   28.814744] cloud-init[758]: |   * + +..* .    |
+[[0;32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
+[[   28.818836] [0;32m  OK  [0mcloud-init] [758]: Listening on ACPID Listen Socket.|    =.. +*oo     |
+
+[[0;32m  OK  [0m] Started ACPI Events Check.
+[[0;32m  OK  [0m] Reached target Paths.
+[   28.823745] cloud-init[758]: [+----[SHA256]-----+[0;32m  OK  [0m
+] Started Daily apt upgrade and clean activities.
+[   28.830735] [cloud-init[0;32m  OK  [0m[758]: ] Generating public/private ecdsa key pair.Reached target Timers.
+
+[   28.833983]          cloud-initStarting Socket activation for snappy daemon.[758]: 
+Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key.
+[   28.839361] cloud-init[758]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
+[   28.842185] cloud-init[758]: The key fingerprint is:
+[   28.843766] cloud-init[758]: SHA256:AmTRtQFIlhkPXSpiMbQxXHd4JgXnmz0msN5eqYmMna0 root@ubuntu-bionic
+[   28.848703] [cloud-init[0;32m  OK  [0m[758]: ] The key's randomart image is:Reached target Cloud-config availability.
+
+[   28.851652] cloud-init[758]: +---[ECDSA 256]---+
+[   28.854320] cloud-init[758]: | o*oXO+BB        |
+[[0;32m  OK  [0m] Reached target Network is Online.
+[   28.857333] cloud-init[758]: |  .X++==oo       |
+         Starting Availability of block devices...
+[[   28.864102] [0;32m  OK  [0mcloud-init[758]: |  + o ++o        |
+] Reached target Remote File Systems (Pre).
+[[   28.874325] [0;32m  OK  [0mcloud-init] [758]: Reached target Remote File Systems.| . . o o +       |
+
+[[0;32m  OK  [0m] Listening on LXD - unix socket.
+[[0;32m  OK  [0m] Listening on Socket activation for snappy daemon.
+[   28.881441] cloud-init[758]: |      o S +      |
+[[   28.886356] [0;32m  OK  [0mcloud-init] [758]: Started Availability of block devices.|     . o o o     |
+
+[   28.890437] [cloud-init[0;32m  OK  [0m[758]: ] |      . . o      |Reached target Sockets.
+
+[[0;32m  OK  [0m] Reached target Basic System.
+[   28.893134] cloud-init[758]: |     + = +       |
+[   28.896384]          cloud-initStarting Permit User Sessions...[758]: 
+|    . E.=        |
+[   28.899702]          cloud-initStarting LSB: Record successful boot for GRUB...[758]: 
++----[SHA256]-----+
+[   28.906439] cloud-init[758]: Generating public/private ed25519 key pair.
+[   28.909465] cloud-init[758]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key.
+[   28.914237] cloud-init[758]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub.
+[   28.917058] cloud-init[758]: The key fingerprint is:
+[   28.920107] cloud-init[758]: SHA256:wxBL+YgUMIbRVuA9oOyNY99TwQTG0Dyvmq+uDsLgr/0 root@ubuntu-bionic
+[   28.923021] cloud-init[758]: The key's randomart image is:
+[   28.924844]          cloud-initStarting Login Service...[758]: 
++--[ED25519 256]--+
+[   28.927617] cloud-init[758]: |.+*=B++o         |
+[[0;32m  OK  [0m] Started FUSE filesystem for LXC.
+[   28.932096] cloud-init[758]: |o+o+o*+o         |
+         Starting Pollinate to seed the pseudo random number generator...
+[   28.947548] cloud-init[758]: |.o..o.==         |
+[   28.950773] cloud-init[758]: |. o ...+o        |
+[   28.952837] cloud-init[758]: |.= .  ..S        |
+[   28.955553]          cloud-initStarting Snap Daemon...[758]: 
+|= o ...  .       |
+[   28.959536] cloud-init[758]: |oo .oo           |
+[   28.961319] cloud-init[758]: |o oo  .          |
+         Starting LSB: automatic crash report generation...
+[   28.966438] cloud-init[758]: |.++=+E           |
+[[0;32m  OK  [0m] Started Deferred execution scheduler.
+[   28.981281] cloud-init[758]: +----[SHA256]-----+
+[[0;32m  OK  [0m] Started Regular background program processing daemon.
+         Starting Virtualbox guest utils...
+         Starting Dispatcher daemon for systemd-networkd...
+         Starting Accounts Service...
+[[0;32m  OK  [0m] Started D-Bus System Message Bus.
+[[0;32m  OK  [0m] Started Login Service.
+         Starting System Logging Service...
+[[0;32m  OK  [0m] Started irqbalance daemon.
+[[0;32m  OK  [0m] Started Unattended Upgrades Shutdown.
+         Starting LXD - container startup/shutdown...
+[[0;32m  OK  [0m] Started System Logging Service.
+[[0;32m  OK  [0m] Started Permit User Sessions.
+         Starting Authorization Manager...
+         Starting Terminate Plymouth Boot Screen...
+         Starting Hold until boot process finishes up...
+[[0;32m  OK  [0m] Started Terminate Plymouth Boot Screen.
+[[0;32m  OK  [0m] Started Hold until boot process finishes up.
+         Starting Set console scheme...
+[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
+[[0;32m  OK  [0m] Started LSB: automatic crash report generation.
+[[0;32m  OK  [0m] Started Set console scheme.
+[[0;32m  OK  [0m] Created slice system-getty.slice.
+[[0;32m  OK  [0m] Started Getty on tty1.
+[[0;32m  OK  [0m] Reached target Login Prompts.
+[[0;32m  OK  [0m] Started LSB: Record successful boot for GRUB.
+[[0;32m  OK  [0m] Started Authorization Manager.
+[[0;32m  OK  [0m] Started Accounts Service.
+[[0;32m  OK  [0m] Started Virtualbox guest utils.
+[[0;32m  OK  [0m] Started Dispatcher daemon for systemd-networkd.
+[[0;32m  OK  [0m] Started LXD - container startup/shutdown.
+[[0;32m  OK  [0m] Started Snap Daemon.
+         Starting Wait until snapd is fully seeded...
+         Starting Time & Date Service...
+[[0;32m  OK  [0m] Started Time & Date Service.
+[[0;32m  OK  [0m] Started Pollinate to seed the pseudo random number generator.
+         Starting OpenBSD Secure Shell server...
+[[0;32m  OK  [0m] Started OpenBSD Secure Shell server.
+[[0;32m  OK  [0m] Created slice User Slice of vagrant.
+         Starting User Manager for UID 1000...
+[[0;32m  OK  [0m] Started Session 1 of user vagrant.
+[[0;32m  OK  [0m] Started User Manager for UID 1000.
+[[0;32m  OK  [0m] Started Wait until snapd is fully seeded.
+         Starting Apply the settings specified in cloud-config...
+[   34.018577] cloud-init[1451]: Cloud-init v. 22.2-0ubuntu1~18.04.3 running 'modules:config' at Thu, 14 Jul 2022 16:22:19 +0000. Up 32.61 seconds.
+[[0;32m  OK  [0m] Started Apply the settings specified in cloud-config.
+[[0;32m  OK  [0m] Reached target Multi-User System.
+         Starting Execute cloud user/final scripts...
+[[0;32m  OK  [0m] Reached target Graphical Interface.
+         Starting Update UTMP about System Runlevel Changes...
+[[0;32m  OK  [0m] Started Update UTMP about System Runlevel Changes.
+ci-info: no authorized SSH keys fingerprints found for user ubuntu.
+<14>Jul 14 16:22:23 cloud-init: #############################################################
+<14>Jul 14 16:22:23 cloud-init: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+<14>Jul 14 16:22:23 cloud-init: 1024 SHA256:7HsKynDsMekff+vWsBNah81VRkp4sIZLNbHBfnwQLfk root@ubuntu-bionic (DSA)
+<14>Jul 14 16:22:23 cloud-init: 256 SHA256:AmTRtQFIlhkPXSpiMbQxXHd4JgXnmz0msN5eqYmMna0 root@ubuntu-bionic (ECDSA)
+<14>Jul 14 16:22:23 cloud-init: 256 SHA256:wxBL+YgUMIbRVuA9oOyNY99TwQTG0Dyvmq+uDsLgr/0 root@ubuntu-bionic (ED25519)
+<14>Jul 14 16:22:23 cloud-init: 2048 SHA256:WYHcg3UPQkajsk38mxa25RpJLVZpEWXOmK4+vbtABbQ root@ubuntu-bionic (RSA)
+<14>Jul 14 16:22:23 cloud-init: -----END SSH HOST KEY FINGERPRINTS-----
+<14>Jul 14 16:22:23 cloud-init: #############################################################
+-----BEGIN SSH HOST KEY KEYS-----
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC2bxr6Yasr8h2zgWTTiYAiLS5Zmqm3IiJ0YFHCJm293p/WCmuIETsYoLyztJwOFw6f4phBgDIkxTzoz4yvBHao= root@ubuntu-bionic
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJCjqjDpEGD7KVoXYikxWtzKyZUVxcYsDsjSybfuM2Op root@ubuntu-bionic
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPNNw7MJD5s9IsX+3uoxuF69zMeL1ug7RDwbjUdxgXunoONxMH1rEkwHdOzozxnngbavWxKqKrmLdXyuTlRqrke4s4K7qVP+NEsWox/C2udK2HxDRSPvha26eitJ3ldBlyG1b9qfo6KIJYH4+0fo06Gd7URyAgtYvnJOK7mWIh+mGyr5bcV/NBcSvAyLf/6pI7QnN7hwrvofMBNYVhgEOsrBl/MNaImuMfM6jUo42+hOKHvxm+W4Q7bcseroyhCU8NoNydSSBgRoMAeOoS64J1VQePCYQdUat/UG52ZP0ME0fBECcmciHZ6cRpgl9Vs75Aqmp1RI5B891wllWGgxFx root@ubuntu-bionic
+-----END SSH HOST KEY KEYS-----
+[   36.256495] cloud-init[1542]: Cloud-init v. 22.2-0ubuntu1~18.04.3 running 'modules:final' at Thu, 14 Jul 2022 16:22:23 +0000. Up 35.99 seconds.
+[   36.256578] cloud-init[1542]: Cloud-init v. 22.2-0ubuntu1~18.04.3 finished at Thu, 14 Jul 2022 16:22:23 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 36.24 seconds
+
+Ubuntu 18.04.6 LTS ubuntu-bionic ttyS0
+
+ubuntu-bionic login: [ 3044.376495] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [cm:24895]
+[ 3441.168695] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 3469.169376] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 3497.154103] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 3524.486914] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 3553.158833] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 3581.168012] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 3609.164212] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 3637.166349] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 3665.157872] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 3692.403278] watchdog: BUG: soft lockup - CPU#1 stuck for 21s! [exe:27262]
+[ 3721.163163] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 3748.375730] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 3777.154075] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 3805.158432] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 3833.156843] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 3861.154971] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 3889.162509] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 3916.291279] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 3944.276954] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 3972.263917] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 4000.249705] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27262]
+[ 4029.154196] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 4056.221829] watchdog: BUG: soft lockup - CPU#1 stuck for 21s! [exe:27262]
+[ 4085.166514] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 4113.162602] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27262]
+[ 4130.166150] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 4130.169830] 	(detected by 1, t=179014 jiffies, g=21580, c=21579, q=2554)
+[ 4130.174547] All QSes seen, last rcu_sched kthread activity 178582 (4295924824-4295746242), jiffies_till_next_fqs=1, root ->qsmask 0x0
+[ 4160.199107] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27261]
+[ 4188.213132] watchdog: BUG: soft lockup - CPU#1 stuck for 21s! [exe:27261]
+[ 4216.237100] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27261]
+[ 4245.159700] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27261]
+[ 4273.156675] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27261]
+[ 4300.269532] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27261]
+[ 4329.166948] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27261]
+[ 4358.155931] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27261]
+[ 4367.174718] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 4367.192894] 	(detected by 2, t=57782 jiffies, g=21681, c=21680, q=3343)
+[ 4367.210581] All QSes seen, last rcu_sched kthread activity 56717 (4295984049-4295927332), jiffies_till_next_fqs=1, root ->qsmask 0x0
+[ 4367.236031] rcu_sched kthread starved for 56717 jiffies! g21681 c21680 f0x2 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=3
+[ 4461.160990] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [dockerd:24922]
+[ 4489.166763] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [dockerd:24922]
+[ 4495.315231] INFO: rcu_sched self-detected stall on CPU
+[ 4495.319117] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 4495.338403] 	1-....: (1997 ticks this GP) idle=41a/140000000000001/0 softirq=47393/47393 fqs=6826 
+[ 4495.403052] 	 (t=15002 jiffies g=21944 c=21943 q=495)
+[ 4495.403077] 	1-....: (1997 ticks this GP) idle=41a/140000000000001/0 softirq=47393/47393 fqs=6826 
+[ 4495.468874] 	(detected by 3, t=15002 jiffies, g=21944, c=21943, q=495)
+[ 4521.170124] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [dockerd:24922]
+[ 4529.155108] watchdog: BUG: soft lockup - CPU#3 stuck for 24s! [docker:27568]
+[ 4549.166255] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [dockerd:24922]
+[ 4557.156096] watchdog: BUG: soft lockup - CPU#3 stuck for 23s! [docker:27568]
+[ 4612.360899] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 4641.155331] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27559]
+[ 4652.156499] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 4652.188114] 	0-...!: (0 ticks this GP) idle=b6e/140000000000000/0 softirq=52004/52004 fqs=0 
+[ 4652.220054] 	(detected by 2, t=15286 jiffies, g=21987, c=21986, q=1254)
+[ 4652.244768] rcu_sched kthread starved for 15286 jiffies! g21987 c21986 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[ 4669.154690] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 4697.154372] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 4725.155520] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27559]
+[ 4753.154459] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27559]
+[ 4780.277289] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 4808.263327] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27559]
+[ 4820.169244] INFO: task jbd2/sda1-8:344 blocked for more than 120 seconds.
+[ 4820.189743]       Tainted: G           OEL   4.15.0-188-generic #199-Ubuntu
+[ 4820.215628] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 4820.253775] INFO: task systemd-journal:418 blocked for more than 120 seconds.
+[ 4820.282278]       Tainted: G           OEL   4.15.0-188-generic #199-Ubuntu
+[ 4820.301625] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 4820.321446] INFO: task rs:main Q:Reg:1099 blocked for more than 120 seconds.
+[ 4820.340111]       Tainted: G           OEL   4.15.0-188-generic #199-Ubuntu
+[ 4820.360340] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 4820.380872] INFO: task systemd-logind:27580 blocked for more than 120 seconds.
+[ 4820.401343]       Tainted: G           OEL   4.15.0-188-generic #199-Ubuntu
+[ 4820.419841] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 4836.154289] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 4836.173559] 	0-...!: (0 ticks this GP) idle=b6e/140000000000000/0 softirq=52004/52004 fqs=1 
+[ 4836.211765] 	(detected by 2, t=61309 jiffies, g=21987, c=21986, q=2396)
+[ 4836.245462] rcu_sched kthread starved for 45772 jiffies! g21987 c21986 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[ 4836.248881] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 4864.234662] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27559]
+[ 4892.221169] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27559]
+[ 4920.206996] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 4941.156809] INFO: task jbd2/sda1-8:344 blocked for more than 120 seconds.
+[ 4941.194629]       Tainted: G           OEL   4.15.0-188-generic #199-Ubuntu
+[ 4941.231621] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 4941.268454] INFO: task systemd-journal:418 blocked for more than 120 seconds.
+[ 4941.320777]       Tainted: G           OEL   4.15.0-188-generic #199-Ubuntu
+[ 4941.350298] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 4941.372170] INFO: task rs:main Q:Reg:1099 blocked for more than 120 seconds.
+[ 4941.392445]       Tainted: G           OEL   4.15.0-188-generic #199-Ubuntu
+[ 4941.420683] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 4941.459177] INFO: task systemd-logind:27580 blocked for more than 120 seconds.
+[ 4941.482783]       Tainted: G           OEL   4.15.0-188-generic #199-Ubuntu
+[ 4941.502536] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 4948.192888] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 4976.178840] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 5004.164837] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 5016.156310] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 5016.190058] 	0-...0: (0 ticks this GP) idle=b72/140000000000000/0 softirq=52004/52004 fqs=2 
+[ 5016.220883] 	(detected by 2, t=106332 jiffies, g=21987, c=21986, q=3539)
+[ 5016.255926] rcu_sched kthread starved for 44972 jiffies! g21987 c21986 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[ 5032.154914] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 5060.155220] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 5062.156885] INFO: task jbd2/sda1-8:344 blocked for more than 120 seconds.
+[ 5062.199834]       Tainted: G           OEL   4.15.0-188-generic #199-Ubuntu
+[ 5062.240337] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 5062.266004] INFO: task systemd-journal:418 blocked for more than 120 seconds.
+[ 5062.288755]       Tainted: G           OEL   4.15.0-188-generic #199-Ubuntu
+[ 5062.312133] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 5077.156651] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 5077.175967] 	0-...1: (0 ticks this GP) idle=b72/140000000000000/0 softirq=52004/52004 fqs=0 
+[ 5077.200865] 	1-...!: (3503 ticks this GP) idle=a26/140000000000000/0 softirq=47731/47731 fqs=0 
+[ 5077.220832] 	(detected by 2, t=15222 jiffies, g=21988, c=21987, q=3833)
+[ 5077.244458] rcu_sched kthread starved for 15222 jiffies! g21988 c21987 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[ 5104.155577] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27559]
+[ 5200.167989] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27712]
+[ 5228.163387] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27712]
+[ 5234.314263] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 5234.353544] 	1-...!: (1 GPs behind) idle=b8a/140000000000000/0 softirq=48647/48647 fqs=0 
+[ 5234.381622] 	2-...!: (0 ticks this GP) idle=a26/140000000000000/0 softirq=52053/52053 fqs=0 
+[ 5234.406471] 	(detected by 0, t=15002 jiffies, g=22424, c=22423, q=653)
+[ 5234.432307] rcu_sched kthread starved for 15002 jiffies! g22424 c22423 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=2
+[ 5260.156451] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5280.168137] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5288.160423] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5308.154837] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5316.154731] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27712]
+[ 5336.169881] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5344.165767] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27712]
+[ 5364.214375] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5372.213306] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27712]
+[ 5392.202564] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5400.202486] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27712]
+[ 5414.236117] INFO: rcu_sched self-detected stall on CPU
+[ 5414.244222] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 5414.268114] 	1-...!: (1 GPs behind) idle=b8a/140000000000001/0 softirq=48647/48647 fqs=1 
+[ 5414.324404] 	 (t=60007 jiffies g=22424 c=22423 q=16575)
+[ 5414.324444] 	1-...!: (1 GPs behind) idle=b8a/140000000000001/0 softirq=48647/48647 fqs=1 
+[ 5414.355742] rcu_sched kthread starved for 44795 jiffies! g22424 c22423 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=2
+[ 5414.376619] 	2-...!: (0 ticks this GP) idle=a26/140000000000000/0 softirq=52053/52053 fqs=1 
+[ 5414.430378] 	
+[ 5414.448402] rcu_sched kthread starved for 44795 jiffies! g22424 c22423 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=2
+[ 5440.213063] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5440.213044] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5468.212223] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5468.212773] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5496.220047] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5496.220411] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5524.233613] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5524.233623] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5552.258982] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5552.259066] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5580.284177] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27712]
+[ 5580.284161] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [kswapd0:52]
+[ 5594.281014] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 5594.293744] 	1-....: (1 GPs behind) idle=b8a/140000000000000/0 softirq=48647/48647 fqs=2 
+[ 5594.313668] 	2-...0: (0 ticks this GP) idle=a2a/140000000000000/0 softirq=52053/52053 fqs=2 
+[ 5594.335097] 	(detected by 0, t=105038 jiffies, g=22424, c=22423, q=19441)
+[ 5594.362566] rcu_sched kthread starved for 44791 jiffies! g22424 c22423 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=2
+[ 5620.279950] watchdog: BUG: soft lockup - CPU#1 stuck for 23s! [exe:27712]
+[ 5620.281063] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [kswapd0:52]
+[ 5648.281961] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5648.282911] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5676.295548] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5676.295577] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5704.311851] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5704.311829] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5732.383917] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5732.384572] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5759.859908] watchdog: BUG: soft lockup - CPU#1 stuck for 22s! [exe:27712]
+[ 5760.388871] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [kswapd0:52]
+[ 5840.405249] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 5868.404962] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 5873.945753] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 5873.959151] 	0-....: (1509 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=6507 
+[ 5873.985543] 	(detected by 2, t=15002 jiffies, g=22551, c=22550, q=1040)
+[ 5899.907720] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 5928.404412] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 5956.405234] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 5984.415215] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6012.405829] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6040.094555] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6053.907215] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 6053.925348] 	0-....: (6530 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=26102 
+[ 6053.956979] 	(detected by 2, t=60007 jiffies, g=22551, c=22550, q=2498)
+[ 6080.125044] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6108.122809] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6136.125435] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6164.137223] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6192.125034] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6220.157918] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6233.837960] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 6233.855048] 	0-....: (12258 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=45577 
+[ 6233.879939] 	(detected by 2, t=105012 jiffies, g=22551, c=22550, q=3654)
+[ 6260.206098] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 6288.256518] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 6316.265136] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6344.279314] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6372.287662] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6399.662347] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6413.767160] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 6413.788539] 	0-....: (18053 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=65048 
+[ 6413.818065] 	(detected by 2, t=150017 jiffies, g=22551, c=22550, q=4793)
+[ 6440.279748] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6460.293719] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 6468.302206] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 6488.325507] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6496.338031] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 6515.620237] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6524.388668] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 6544.418509] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6552.418865] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 6571.592243] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6580.407575] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6593.698660] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 6593.718850] 	0-....: (24559 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=70968 
+[ 6593.758223] 	(detected by 2, t=195022 jiffies, g=22551, c=22550, q=6034)
+[ 6619.552310] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6619.569284] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6647.538276] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6647.554468] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 6676.416078] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 6676.416224] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 6703.511450] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 6704.414765] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 6731.496808] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6731.512773] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6759.483553] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 6759.498289] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6774.406228] INFO: rcu_sched self-detected stall on CPU
+[ 6774.406272] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 6774.426210] 	0-....: (32142 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=75324 
+[ 6774.487201] 	 (t=240221 jiffies g=22551 c=22550 q=7194)
+[ 6774.487406] 	0-....: (32142 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=75324 
+[ 6774.565934] 	(detected by 2, t=240221 jiffies, g=22551, c=22550, q=7194)
+[ 6799.463738] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[ 6799.479922] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6827.448357] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6827.464745] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[ 6855.434281] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6855.452129] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6883.421390] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[ 6883.436334] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6911.418516] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[ 6911.424258] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[ 6939.417341] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 6939.417977] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 6954.405854] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 6954.422905] 	0-....: (39022 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=79373 
+[ 6954.451591] 	(detected by 2, t=285244 jiffies, g=22551, c=22550, q=8648)
+[ 6979.417743] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 6979.417716] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7007.404838] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7007.404869] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7035.417293] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7035.417325] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7063.434797] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7063.434856] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7091.453343] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7091.453316] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7119.451622] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7119.452566] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7134.474926] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 7134.488882] 	0-....: (44736 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=83289 
+[ 7134.516703] 	(detected by 2, t=330284 jiffies, g=22551, c=22550, q=9825)
+[ 7159.487770] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[ 7159.487819] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7187.517815] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7187.517930] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7215.541090] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7215.541936] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7243.257256] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7243.530299] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7271.543028] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7271.543702] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7299.544896] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7299.545534] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7314.404884] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 7314.427869] 	0-....: (51326 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=87911 
+[ 7314.465773] 	(detected by 2, t=375289 jiffies, g=22551, c=22550, q=10980)
+[ 7339.530106] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7339.530159] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7367.530954] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7367.531982] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7395.531794] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7395.531984] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7423.529787] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7423.530670] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7451.202450] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7451.540851] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7479.529480] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7479.529511] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7494.541224] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 7494.559376] 	0-....: (57964 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=91962 
+[ 7494.597748] 	(detected by 2, t=420333 jiffies, g=22551, c=22550, q=12237)
+[ 7519.530327] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7519.530409] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7547.531387] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7547.531434] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7575.537265] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7575.537342] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7603.530765] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7603.530896] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7631.532771] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7631.533360] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7659.530196] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7659.530168] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7674.533033] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 7674.545963] 	0-....: (65246 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=96189 
+[ 7674.573249] 	(detected by 2, t=465343 jiffies, g=22551, c=22550, q=13421)
+[ 7699.546197] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7699.546512] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7727.584756] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7727.584788] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7755.576737] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7755.576733] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7783.589116] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7783.589152] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7811.578238] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7811.578272] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7839.588915] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 7839.588948] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 7854.606964] INFO: rcu_sched self-detected stall on CPU
+[ 7854.612390] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 7854.631282] 	0-....: (72097 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=100389 
+[ 7854.705767] 	 (t=510348 jiffies g=22551 c=22550 q=14723)
+[ 7854.705869] 	0-....: (72097 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=100389 
+[ 7854.770201] 	(detected by 2, t=510348 jiffies, g=22551, c=22550, q=14723)
+[ 7879.588966] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7879.589010] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7907.151634] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7907.166844] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7935.576361] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7935.576338] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7963.577102] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 7963.577134] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7991.590436] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 7991.591092] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8019.589238] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8019.589261] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8034.580521] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 8034.595486] 	0-....: (78355 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=104782 
+[ 8034.641655] 	(detected by 2, t=555362 jiffies, g=22551, c=22550, q=15896)
+[ 8059.099778] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8059.588895] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8087.587869] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8087.587952] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8115.580232] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8115.580835] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8143.578574] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8143.579547] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8171.576652] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8171.576623] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8199.576502] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8199.576477] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8214.592257] INFO: rcu_sched self-detected stall on CPU
+[ 8214.596018] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 8214.612776] 	0-....: (84387 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=109471 
+[ 8214.681202] 	 (t=600367 jiffies g=22551 c=22550 q=17056)
+[ 8214.681297] 	0-....: (84387 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=109471 
+[ 8214.755241] 	(detected by 2, t=600367 jiffies, g=22551, c=22550, q=17056)
+[ 8239.591401] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8239.592042] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8267.591391] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8267.592069] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8295.578371] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8295.579437] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8323.686676] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8323.687223] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8351.703636] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8351.703667] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8379.713722] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8379.713719] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8394.715615] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 8394.732171] 	0-....: (90662 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=113771 
+[ 8394.764027] 	(detected by 2, t=645396 jiffies, g=22551, c=22550, q=18312)
+[ 8419.703486] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[ 8419.703528] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8447.083936] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[ 8447.716312] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8475.084235] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8475.748992] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8503.750418] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8503.751149] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8531.749763] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8531.750893] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8559.760386] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8559.760371] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8574.749601] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 8574.765809] 	0-....: (97795 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=117861 
+[ 8574.794813] 	(detected by 2, t=690405 jiffies, g=22551, c=22550, q=19473)
+[ 8599.750952] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8599.751782] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8627.749711] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8627.750398] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8655.748749] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8655.749195] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8683.748420] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8683.748393] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8711.133247] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8711.750101] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8739.761395] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8739.761367] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8755.760036] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 8755.770291] 	0-....: (104252 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=121625 
+[ 8755.794053] 	(detected by 2, t=735644 jiffies, g=22551, c=22550, q=20752)
+[ 8779.748099] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8783.153262] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[ 8807.749727] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8811.759299] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8835.749338] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 8839.752342] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8863.749374] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8867.764255] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8891.747848] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8895.760686] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8919.791969] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8923.790467] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 8935.794414] INFO: rcu_sched self-detected stall on CPU
+[ 8935.798525] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 8935.817284] 	0-....: (110800 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=125438 
+[ 8935.881223] 	 (t=780649 jiffies g=22551 c=22550 q=21914)
+[ 8935.881369] 	0-....: (110800 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=125438 
+[ 8935.942614] 	(detected by 2, t=780649 jiffies, g=22551, c=22550, q=21914)
+[ 8963.791140] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8963.791174] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 8991.831474] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 8991.831463] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9019.887609] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9019.888225] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9047.118614] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[ 9047.886135] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9075.104920] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9075.873951] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9103.084830] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[ 9103.100877] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[ 9115.904862] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 9115.917807] 	0-....: (117492 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=129371 
+[ 9115.956462] 	(detected by 2, t=825694 jiffies, g=22551, c=22550, q=23073)
+[ 9139.908852] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9143.084874] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9167.101059] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9171.922897] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9195.100934] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[ 9199.998357] watchdog: BUG: soft lockup - CPU#0 stuck for 24s! [exe:27727]
+[ 9223.100946] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9228.016805] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9251.100841] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9255.085387] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9280.061110] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9283.087771] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9296.088562] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 9296.102914] 	0-....: (124275 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=133251 
+[ 9296.134729] 	(detected by 2, t=870739 jiffies, g=22551, c=22550, q=24334)
+[ 9323.084929] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9323.100977] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9351.084875] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9351.101155] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9379.085010] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9379.102207] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9407.122931] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9407.122958] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9435.137829] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9435.137950] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9463.138242] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9463.138293] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9476.124453] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 9476.139051] 	0-....: (130533 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=137577 
+[ 9476.180070] 	(detected by 2, t=915748 jiffies, g=22551, c=22550, q=25494)
+[ 9503.137658] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9503.137695] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9531.134719] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9531.134784] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9559.150396] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9559.150371] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9587.169771] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9587.170431] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9615.168654] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9615.168781] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9643.171752] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9643.172550] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9656.166982] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 9656.180656] 	0-....: (137795 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=141463 
+[ 9656.207674] 	(detected by 2, t=960759 jiffies, g=22551, c=22550, q=26764)
+[ 9683.156008] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9683.156844] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9711.154147] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9711.154555] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9739.154952] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9739.155055] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9767.156802] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9767.157322] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9795.154779] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9795.154771] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9823.165511] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9823.165825] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9836.181376] INFO: rcu_sched self-detected stall on CPU
+[ 9836.184840] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 9836.204510] 	0-....: (144646 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=145396 
+[ 9836.261561] 	 (t=1005764 jiffies g=22551 c=22550 q=27933)
+[ 9836.261643] 	0-....: (144646 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=145396 
+[ 9836.313528] 	(detected by 2, t=1005764 jiffies, g=22551, c=22550, q=27933)
+[ 9863.206358] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9863.206984] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9891.248999] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[ 9891.249374] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[ 9919.249206] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9919.249237] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9947.263233] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9947.264218] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[ 9975.259603] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[ 9975.259604] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10003.252647] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10003.252693] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10016.249175] INFO: rcu_sched detected stalls on CPUs/tasks:
+[10016.264264] 	0-....: (151260 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=149593 
+[10016.293941] 	(detected by 2, t=1050780 jiffies, g=22551, c=22550, q=29097)
+[10043.248231] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10043.248271] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10071.290675] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10071.291373] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10099.101149] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10099.295216] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10127.281330] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10127.282339] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10155.327287] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10155.327269] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10183.373816] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10183.373900] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10196.373260] INFO: rcu_sched detected stalls on CPUs/tasks:
+[10196.386344] 	0-....: (158043 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=153621 
+[10196.414882] 	(detected by 2, t=1095811 jiffies, g=22551, c=22550, q=30357)
+[10223.385099] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10223.385139] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10251.387459] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10251.387513] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10279.390091] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10279.390145] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10307.100829] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10307.418152] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10335.415296] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10335.416146] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10363.085018] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10363.437408] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10376.452635] INFO: rcu_sched detected stalls on CPUs/tasks:
+[10376.470037] 	0-....: (165090 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=158438 
+[10376.522553] 	(detected by 2, t=1140830 jiffies, g=22551, c=22550, q=31522)
+[10403.452036] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10403.452116] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10431.454447] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10431.454509] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10459.483994] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10459.485579] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10487.511160] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10487.511156] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10515.497845] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10515.497846] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10543.542595] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10543.542673] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10556.544602] INFO: rcu_sched detected stalls on CPUs/tasks:
+[10556.555809] 	0-....: (172029 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=162358 
+[10556.581300] 	(detected by 2, t=1185853 jiffies, g=22551, c=22550, q=32793)
+[10583.543857] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10583.544024] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10611.530587] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10611.531144] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10639.530147] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10639.530739] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10667.579146] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10667.579276] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10695.582653] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10695.582625] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10723.590980] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10723.591029] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10736.615332] INFO: rcu_sched detected stalls on CPUs/tasks:
+[10736.630327] 	0-....: (179899 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=166735 
+[10736.658236] 	(detected by 2, t=1230871 jiffies, g=22551, c=22550, q=33979)
+[10763.625612] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10763.625595] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10791.100901] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[10791.636244] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10819.637130] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10819.637277] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10847.634765] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10847.634957] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10875.670625] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[10875.670669] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10903.702317] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10903.702354] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10916.707635] INFO: rcu_sched detected stalls on CPUs/tasks:
+[10916.730048] 	0-....: (186476 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=170899 
+[10916.780532] 	(detected by 2, t=1275886 jiffies, g=22551, c=22550, q=35142)
+[10943.145558] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10943.763750] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10971.808705] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[10971.809261] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[10999.839499] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[10999.839882] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11027.848953] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11027.849323] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11055.185173] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[11055.201022] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[11083.199803] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11083.875356] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[11096.887614] INFO: rcu_sched detected stalls on CPUs/tasks:
+[11096.899155] 	0-....: (192305 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=175068 
+[11096.928270] 	(detected by 2, t=1320909 jiffies, g=22551, c=22550, q=36407)
+[11123.879963] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11123.880071] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11151.894989] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11151.895032] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[11179.188890] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11179.906518] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11207.175061] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11207.917169] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11235.905586] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[11235.905766] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11263.905694] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11263.905938] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[11276.917314] INFO: rcu_sched detected stalls on CPUs/tasks:
+[11276.936770] 	0-....: (199104 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=179641 
+[11276.973262] 	(detected by 2, t=1365937 jiffies, g=22551, c=22550, q=37571)
+[11303.110843] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11303.127110] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11331.102141] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11331.906207] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11359.906746] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11359.907328] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11387.932153] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11387.932373] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11415.104171] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11415.118075] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[11443.118125] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[11443.954327] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11456.951900] INFO: rcu_sched detected stalls on CPUs/tasks:
+[11456.973287] 	0-....: (207297 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=184192 
+[11457.007906] 	(detected by 2, t=1410951 jiffies, g=22551, c=22550, q=38915)
+[11483.103426] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11483.118071] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11511.963108] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[11511.963163] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11539.102210] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[11539.118241] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[11567.951171] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11567.951215] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11595.954528] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11595.955571] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11623.952542] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[11623.952620] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11637.958646] INFO: rcu_sched self-detected stall on CPU
+[11637.958680] INFO: rcu_sched detected stalls on CPUs/tasks:
+[11637.958662] 	0-....: (214432 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=188362 
+[11638.030792] 	0-....: (214432 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=188363 
+[11638.030869] 	 (t=1456203 jiffies g=22551 c=22550 q=40080)
+[11638.087552] 	(detected by 2, t=1456203 jiffies, g=22551, c=22550, q=40080)
+[11663.118793] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[11663.951546] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11691.118009] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11691.965325] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11719.961824] watchdog: BUG: soft lockup - CPU#0 stuck for 24s! [exe:27727]
+[11719.961884] watchdog: BUG: soft lockup - CPU#2 stuck for 24s! [(d-logind):27849]
+[11747.118110] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11747.951530] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11775.955471] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[11775.955459] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11803.119080] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11803.954181] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11817.981419] INFO: rcu_sched detected stalls on CPUs/tasks:
+[11817.993405] 	0-....: (221560 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=192787 
+[11818.017843] 	(detected by 2, t=1501208 jiffies, g=22551, c=22550, q=41248)
+[11843.102014] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[11843.118246] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[11871.104057] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11871.118016] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[11899.999239] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11899.999226] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11927.118492] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [(d-logind):27849]
+[11927.999761] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[11955.117964] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11956.031179] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11983.102203] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[11983.118271] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[11998.045142] INFO: rcu_sched detected stalls on CPUs/tasks:
+[11998.064443] 	0-....: (228135 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=196752 
+[11998.092724] 	(detected by 2, t=1546224 jiffies, g=22551, c=22550, q=42512)
+[12023.101980] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12023.118127] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12051.102160] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[12052.078642] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12079.101967] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12080.107815] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12107.167575] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12107.168331] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12135.202354] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12135.202400] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12163.118217] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12163.216065] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12178.216043] INFO: rcu_sched detected stalls on CPUs/tasks:
+[12178.238173] 	0-....: (235131 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=201290 
+[12178.280082] 	(detected by 2, t=1591267 jiffies, g=22551, c=22550, q=43697)
+[12203.251938] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12203.252028] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12231.260570] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[12231.260620] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12259.260139] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12259.260138] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[12287.248786] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12287.248823] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12315.261467] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12315.261454] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12343.248340] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12343.248381] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12358.249602] INFO: rcu_sched self-detected stall on CPU
+[12358.249634] INFO: rcu_sched detected stalls on CPUs/tasks:
+[12358.249616] 	0-....: (241532 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=205420 
+[12358.325349] 	0-....: (241532 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=205421 
+[12358.325425] 	 (t=1636275 jiffies g=22551 c=22550 q=44976)
+[12358.349533] 	(detected by 2, t=1636275 jiffies, g=22551, c=22550, q=44976)
+[12383.249974] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12383.250166] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12411.281159] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12411.281212] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12439.293769] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12439.293866] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12467.281080] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12467.281530] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[12495.279309] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12495.279921] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[12523.281254] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[12523.281314] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12538.311326] INFO: rcu_sched detected stalls on CPUs/tasks:
+[12538.328122] 	0-....: (248232 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=209080 
+[12538.375807] 	(detected by 2, t=1681284 jiffies, g=22551, c=22550, q=46146)
+[12563.357330] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[12563.357366] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12591.384679] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12591.385437] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12619.373597] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12619.373720] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12647.376304] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12647.376462] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12675.389873] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12675.390077] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12703.406736] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12703.406824] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12718.418675] INFO: rcu_sched detected stalls on CPUs/tasks:
+[12718.431774] 	0-....: (254253 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=212613 
+[12718.458569] 	(detected by 2, t=1726289 jiffies, g=22551, c=22550, q=47313)
+[12743.418968] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12743.419677] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[12771.417159] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[12771.417338] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12799.463875] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12799.463914] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12827.452884] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12827.453429] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12855.472334] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12855.472447] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12883.529102] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12883.529343] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12898.530862] INFO: rcu_sched detected stalls on CPUs/tasks:
+[12898.544121] 	0-....: (260708 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=216766 
+[12898.569982] 	(detected by 2, t=1771340 jiffies, g=22551, c=22550, q=48582)
+[12923.536315] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[12923.536926] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12951.564050] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[12951.564122] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[12979.092834] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[12979.588890] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13007.577151] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13007.577186] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13035.092716] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13035.578245] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13063.610713] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13063.610686] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13078.640163] INFO: rcu_sched detected stalls on CPUs/tasks:
+[13078.655864] 	0-....: (267350 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=220959 
+[13078.695577] 	(detected by 2, t=1816376 jiffies, g=22551, c=22550, q=49758)
+[13103.669811] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13103.669871] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[13131.667887] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13131.668581] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13159.654482] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13159.655156] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13187.667548] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13187.668022] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13215.660896] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13215.660927] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13243.671454] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13243.672074] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13258.698841] INFO: rcu_sched detected stalls on CPUs/tasks:
+[13258.711030] 	0-....: (274534 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=225389 
+[13258.742146] 	(detected by 2, t=1861390 jiffies, g=22551, c=22550, q=51044)
+[13283.759872] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[13283.760029] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13311.749932] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13311.749913] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13339.761688] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13339.761721] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13367.763146] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13367.763634] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13395.760472] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13395.760610] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13423.749028] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13423.749001] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13438.763675] INFO: rcu_sched detected stalls on CPUs/tasks:
+[13438.782604] 	0-....: (282130 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=229604 
+[13438.826931] 	(detected by 2, t=1906407 jiffies, g=22551, c=22550, q=52213)
+[13463.091516] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[13463.793669] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13491.091724] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13491.797953] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13519.837343] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13519.837827] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13547.828617] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13547.828649] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13575.091251] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13575.827346] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13603.091416] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[13603.836608] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13618.839858] INFO: rcu_sched detected stalls on CPUs/tasks:
+[13618.852708] 	0-....: (289232 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=233565 
+[13618.876564] 	(detected by 2, t=1951426 jiffies, g=22551, c=22550, q=53404)
+[13643.091223] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13643.107300] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13671.841735] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13671.841816] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13699.108114] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13699.826050] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13727.872693] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13727.872740] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13755.091369] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13755.108058] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13783.883025] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13783.883055] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13798.886289] INFO: rcu_sched detected stalls on CPUs/tasks:
+[13798.900575] 	0-....: (296215 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=237210 
+[13798.931407] 	(detected by 2, t=1996437 jiffies, g=22551, c=22550, q=54669)
+[13823.875749] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13823.875815] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[13851.877018] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[13851.877034] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13879.108216] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13879.889640] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[13907.093190] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[13907.107397] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13935.091363] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13935.954616] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13963.954318] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[13963.954319] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[13978.983928] INFO: rcu_sched detected stalls on CPUs/tasks:
+[13979.010740] 	0-....: (302913 ticks this GP) idle=5ce/140000000000000/0 softirq=54989/54989 fqs=241460 
+[13979.056011] 	(detected by 2, t=2041462 jiffies, g=22551, c=22550, q=55845)
+[14003.091573] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[14004.000928] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[14031.092016] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[14031.107447] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[14060.000747] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[14060.001673] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[14087.091251] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[14087.107275] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[14115.108146] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[14115.998567] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[14143.091276] watchdog: BUG: soft lockup - CPU#0 stuck for 21s! [exe:27727]
+[14143.107435] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[14158.999992] INFO: rcu_sched self-detected stall on CPU
+[14159.007330] INFO: rcu_sched detected stalls on CPUs/tasks:
+[14159.020854] 	0-....: (310026 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=245391 
+[14159.066130] 	 (t=2086468 jiffies g=22551 c=22550 q=57154)
+[14159.066259] 	0-....: (310026 ticks this GP) idle=5ce/140000000000001/0 softirq=54989/54989 fqs=245391 
+[14159.116712] 	(detected by 2, t=2086468 jiffies, g=22551, c=22550, q=57154)
+[14183.091396] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[14183.107218] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[14211.107315] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[14212.088536] watchdog: BUG: soft lockup - CPU#0 stuck for 24s! [exe:27727]
+[14239.091402] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[14240.089824] watchdog: BUG: soft lockup - CPU#2 stuck for 24s! [(d-logind):27849]
+[14267.124342] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [(d-logind):27849]
+[14267.124331] watchdog: BUG: soft lockup - CPU#0 stuck for 23s! [exe:27727]
+[14295.122880] watchdog: BUG: soft lockup - CPU#0 stuck for 22s! [exe:27727]
+[14295.122934] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [(d-logind):27849]
+[14359.129043] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [exe:28009]
+[14388.127043] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [exe:28009]
+[14416.137790] watchdog: BUG: soft lockup - CPU#2 stuck for 24s! [exe:28009]
+[14443.142656] INFO: rcu_sched self-detected stall on CPU
+[14443.158774] 	2-...!: (4487 ticks this GP) idle=c7a/1/0 softirq=53871/53871 fqs=0 
+[14443.161568] INFO: rcu_sched self-detected stall on CPU
+[14443.174533] 	 (t=27740 jiffies g=22643 c=22642 q=1231)
+[14443.174625] INFO: rcu_sched detected stalls on CPUs/tasks:
+[14443.174630] 	1-...!: (1 GPs behind) idle=fce/140000000000001/0 softirq=49926/49927 fqs=0 
+[14443.174632] 	2-...!: (4487 ticks this GP) idle=c7a/1/0 softirq=53871/53871 fqs=0 
+[14443.174633] 	(detected by 3, t=27740 jiffies, g=22643, c=22642, q=1231)
+[14443.176874] rcu_sched kthread starved for 27740 jiffies! g22643 c22642 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=3
+[14443.186819] 	1-...!: (1 GPs behind) idle=fce/140000000000001/0 softirq=49926/49927 fqs=1 
+[14443.350702] 	 (t=27740 jiffies g=22643 c=22642 q=1515)
+[14511.205450] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14539.219791] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14543.190634] watchdog: BUG: soft lockup - CPU#0 stuck for 29s! [kworker/u8:2:24950]
+[14546.178897] INFO: rcu_sched self-detected stall on CPU
+[14546.194609] 	2-....: (5149 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=2173 
+[14546.226826] 	 (t=15000 jiffies g=23044 c=23043 q=239)
+[14571.234840] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14599.249029] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14627.254261] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14655.291126] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14683.280179] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14711.294509] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14726.306969] INFO: rcu_sched self-detected stall on CPU
+[14726.310685] INFO: rcu_sched detected stalls on CPUs/tasks:
+[14726.323395] 	2-....: (27832 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=11510 
+[14726.383808] 	 (t=60034 jiffies g=23044 c=23043 q=835)
+[14726.383872] 	2-....: (27832 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=11510 
+[14726.448637] 	(detected by 3, t=60034 jiffies, g=23044, c=23043, q=835)
+[14751.328507] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[14779.329848] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[14807.388759] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14835.378459] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14863.384144] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14891.373847] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14906.375560] INFO: rcu_sched self-detected stall on CPU
+[14906.376643] INFO: rcu_sched detected stalls on CPUs/tasks:
+[14906.397799] 	2-....: (39274 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=16403 
+[14906.451597] 	 (t=105056 jiffies g=23044 c=23043 q=855)
+[14906.451695] 	2-....: (39274 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=16403 
+[14906.513018] 	(detected by 3, t=105056 jiffies, g=23044, c=23043, q=855)
+[14931.376738] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[14959.374597] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[14987.373364] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15015.387280] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15043.373662] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15071.384968] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15086.408758] INFO: rcu_sched self-detected stall on CPU
+[15086.410729] INFO: rcu_sched detected stalls on CPUs/tasks:
+[15086.425679] 	2-....: (52391 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=22038 
+[15086.467354] 	 (t=150074 jiffies g=23044 c=23043 q=872)
+[15086.467392] 	2-....: (52391 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=22038 
+[15086.512687] 	(detected by 3, t=150074 jiffies, g=23044, c=23043, q=872)
+[15111.405727] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15139.404758] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15167.422075] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15195.452219] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15223.452852] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15251.452386] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15266.482029] INFO: rcu_sched self-detected stall on CPU
+[15266.483116] INFO: rcu_sched detected stalls on CPUs/tasks:
+[15266.495091] 	2-....: (64363 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=27188 
+[15266.553513] 	 (t=195103 jiffies g=23044 c=23043 q=933)
+[15266.553590] 	2-....: (64363 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=27188 
+[15266.625059] 	(detected by 3, t=195103 jiffies, g=23044, c=23043, q=933)
+[15291.499240] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15319.506269] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15347.513787] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15375.545169] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15403.576842] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15431.112265] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15446.576933] INFO: rcu_sched self-detected stall on CPU
+[15446.578378] INFO: rcu_sched detected stalls on CPUs/tasks:
+[15446.603690] 	2-....: (74929 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=31712 
+[15446.661155] 	 (t=240127 jiffies g=23044 c=23043 q=939)
+[15446.661240] 	2-....: (74929 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=31712 
+[15446.748340] 	(detected by 3, t=240127 jiffies, g=23044, c=23043, q=939)
+[15471.588947] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15499.593171] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15527.637215] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15555.623113] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15583.633797] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15611.635180] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15626.623687] INFO: rcu_sched self-detected stall on CPU
+[15626.627096] INFO: rcu_sched detected stalls on CPUs/tasks:
+[15626.643887] 	2-....: (87163 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=36965 
+[15626.707170] 	 (t=285139 jiffies g=23044 c=23043 q=945)
+[15626.707279] 	2-....: (87163 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=36965 
+[15626.765550] 	(detected by 3, t=285139 jiffies, g=23044, c=23043, q=945)
+[15651.624845] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15679.624798] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15707.637352] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15735.635476] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15763.640990] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15791.623598] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[15806.635297] INFO: rcu_sched self-detected stall on CPU
+[15806.655882] 	2-....: (98116 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=41640 
+[15806.687570] 	 (t=330142 jiffies g=23044 c=23043 q=951)
+[15831.111997] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15859.111084] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [dockerd:22239]
+[15887.654677] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15915.654418] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15943.111070] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15971.656703] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[15986.667759] INFO: rcu_sched self-detected stall on CPU
+[15986.671873] INFO: rcu_sched detected stalls on CPUs/tasks:
+[15986.687588] 	2-....: (111758 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=47498 
+[15986.740995] 	 (t=375150 jiffies g=23044 c=23043 q=957)
+[15986.741036] 	2-....: (111758 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=47498 
+[15986.791877] 	(detected by 3, t=375150 jiffies, g=23044, c=23043, q=957)
+[16011.668130] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[16039.662601] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[16067.111180] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16095.111737] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16123.749849] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16151.768714] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16166.794581] INFO: rcu_sched self-detected stall on CPU
+[16166.795570] INFO: rcu_sched detected stalls on CPUs/tasks:
+[16166.808288] 	2-....: (122935 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=52287 
+[16166.865206] 	 (t=420181 jiffies g=23044 c=23043 q=963)
+[16166.865267] 	2-....: (122935 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=52287 
+[16166.931317] 	(detected by 3, t=420181 jiffies, g=23044, c=23043, q=963)
+[16191.794332] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16219.782716] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16247.113119] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16275.782869] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[16303.111417] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16331.111366] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16346.803042] INFO: rcu_sched self-detected stall on CPU
+[16346.822599] 	2-....: (135100 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=57492 
+[16346.860227] 	 (t=465184 jiffies g=23044 c=23043 q=969)
+[16371.790652] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16399.780481] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16427.781642] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16455.779890] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16483.784894] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16511.794148] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[16526.894300] INFO: rcu_sched self-detected stall on CPU
+[16526.921056] 	2-....: (147007 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=62603 
+[16526.964732] 	 (t=510187 jiffies g=23044 c=23043 q=975)
+[16551.823382] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[16579.216271] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16607.828964] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[16635.878896] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[16663.887955] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16691.918680] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16706.905386] INFO: rcu_sched self-detected stall on CPU
+[16706.908129] INFO: rcu_sched detected stalls on CPUs/tasks:
+[16706.930927] 	2-....: (159123 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=67748 
+[16706.930932] 	 (t=555194 jiffies g=23044 c=23043 q=981)
+[16706.963888] 	2-....: (159123 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=67748 
+[16707.060377] 	(detected by 3, t=555194 jiffies, g=23044, c=23043, q=981)
+[16731.911431] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16759.146734] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16787.905031] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16815.117930] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[16843.116823] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16871.910445] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[16886.915414] INFO: rcu_sched self-detected stall on CPU
+[16886.916635] INFO: rcu_sched detected stalls on CPUs/tasks:
+[16886.930395] 	2-....: (170787 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=72691 
+[16886.979618] 	 (t=600210 jiffies g=23044 c=23043 q=989)
+[16886.979675] 	2-....: (170787 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=72691 
+[16887.026590] 	(detected by 3, t=600210 jiffies, g=23044, c=23043, q=989)
+[16911.919549] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16939.115781] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [dockerd:22239]
+[16967.912133] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[16995.115998] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [dockerd:22239]
+[17023.115994] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17051.953042] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17067.001431] INFO: rcu_sched self-detected stall on CPU
+[17067.004124] INFO: rcu_sched detected stalls on CPUs/tasks:
+[17067.029978] 	2-....: (181724 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=77359 
+[17067.110679] 	 (t=645232 jiffies g=23044 c=23043 q=993)
+[17067.110788] 	2-....: (181724 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=77359 
+[17067.207219] 	(detected by 3, t=645232 jiffies, g=23044, c=23043, q=993)
+[17092.011655] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17119.116001] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17148.000834] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17175.115862] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17203.117146] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [dockerd:22239]
+[17231.116060] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [dockerd:22239]
+[17247.011771] INFO: rcu_sched self-detected stall on CPU
+[17247.026083] 	2-....: (194450 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=82770 
+[17247.054682] 	 (t=690235 jiffies g=23044 c=23043 q=1001)
+[17271.115844] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17299.116589] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17327.116826] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17355.116020] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17383.116108] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17412.000420] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17427.024025] INFO: rcu_sched self-detected stall on CPU
+[17427.041811] 	2-....: (207200 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=88298 
+[17427.096177] 	 (t=735238 jiffies g=23044 c=23043 q=1005)
+[17451.115794] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17480.076965] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17507.116046] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17536.090449] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17564.080784] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17591.115919] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17607.077788] INFO: rcu_sched self-detected stall on CPU
+[17607.081007] INFO: rcu_sched detected stalls on CPUs/tasks:
+[17607.100023] 	2-....: (218395 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=93105 
+[17607.148013] 	 (t=780251 jiffies g=23044 c=23043 q=1013)
+[17607.148099] 	2-....: (218395 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=93105 
+[17607.207861] 	(detected by 3, t=780251 jiffies, g=23044, c=23043, q=1013)
+[17631.117306] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17659.120479] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17687.134510] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17715.148769] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17743.163264] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17771.176398] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17787.156313] INFO: rcu_sched self-detected stall on CPU
+[17787.171400] 	2-....: (230764 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=98431 
+[17787.200782] 	 (t=825254 jiffies g=23044 c=23043 q=1208)
+[17811.196544] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[17840.138621] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17867.225239] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17895.232598] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17923.220119] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17952.157222] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[17967.199110] INFO: rcu_sched self-detected stall on CPU
+[17967.200318] INFO: rcu_sched detected stalls on CPUs/tasks:
+[17967.215010] 	2-....: (241128 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=102877 
+[17967.268142] 	 (t=870261 jiffies g=23044 c=23043 q=1216)
+[17967.268223] 	2-....: (241128 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=102877 
+[17967.355061] 	(detected by 3, t=870261 jiffies, g=23044, c=23043, q=1216)
+[17991.202287] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18019.202673] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18047.201192] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18075.217530] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18103.214593] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18131.217990] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[18147.248514] INFO: rcu_sched self-detected stall on CPU
+[18147.250495] INFO: rcu_sched detected stalls on CPUs/tasks:
+[18147.271183] 	2-....: (252375 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=107696 
+[18147.315767] 	 (t=915293 jiffies g=23044 c=23043 q=1220)
+[18147.315865] 	2-....: (252375 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=107696 
+[18147.362254] 	(detected by 3, t=915293 jiffies, g=23044, c=23043, q=1220)
+[18171.248128] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18199.258837] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18227.262191] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18255.249994] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18283.262070] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18311.280903] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18327.292331] INFO: rcu_sched self-detected stall on CPU
+[18327.293532] INFO: rcu_sched detected stalls on CPUs/tasks:
+[18327.304884] 	2-....: (264260 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=112783 
+[18327.304888] 	 (t=960304 jiffies g=23044 c=23043 q=1228)
+[18327.317790] 	2-....: (264260 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=112783 
+[18327.392521] 	(detected by 3, t=960304 jiffies, g=23044, c=23043, q=1228)
+[18351.284559] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18379.280223] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[18407.279884] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[18435.292736] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[18463.293280] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[18491.291606] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18507.301576] INFO: rcu_sched self-detected stall on CPU
+[18507.323808] 	2-....: (276265 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=117962 
+[18507.365491] 	 (t=1005307 jiffies g=23044 c=23043 q=1232)
+[18535.280740] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[18563.281298] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18591.340167] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18619.376234] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18647.374397] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18675.374445] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18687.403902] INFO: rcu_sched self-detected stall on CPU
+[18687.406039] INFO: rcu_sched detected stalls on CPUs/tasks:
+[18687.425531] 	2-....: (287468 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=122796 
+[18687.475204] 	 (t=1050332 jiffies g=23044 c=23043 q=1240)
+[18687.475266] 	2-....: (287468 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=122796 
+[18687.533717] 	(detected by 3, t=1050332 jiffies, g=23044, c=23043, q=1240)
+[18711.407916] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18739.466611] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18767.452730] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18795.465491] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18823.498095] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18851.512740] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18867.498980] INFO: rcu_sched self-detected stall on CPU
+[18867.502930] INFO: rcu_sched detected stalls on CPUs/tasks:
+[18867.513651] 	2-....: (300092 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=128193 
+[18867.513653] 	 (t=1095356 jiffies g=23044 c=23043 q=1244)
+[18867.535604] 	2-....: (300092 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=128193 
+[18867.657263] 	(detected by 3, t=1095356 jiffies, g=23044, c=23043, q=1244)
+[18891.499124] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[18919.117589] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[18947.512898] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[18975.514992] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19003.531244] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19031.531787] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19047.532332] INFO: rcu_sched self-detected stall on CPU
+[19047.533649] INFO: rcu_sched detected stalls on CPUs/tasks:
+[19047.552553] 	2-....: (312576 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=133592 
+[19047.613298] 	 (t=1140364 jiffies g=23044 c=23043 q=1252)
+[19047.613404] 	2-....: (312576 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=133592 
+[19047.673200] 	(detected by 3, t=1140364 jiffies, g=23044, c=23043, q=1252)
+[19071.529426] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19099.542722] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19127.118192] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19155.637815] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19183.656318] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19211.665918] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19227.658001] INFO: rcu_sched self-detected stall on CPU
+[19227.658916] INFO: rcu_sched detected stalls on CPUs/tasks:
+[19227.674885] 	2-....: (324942 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=138900 
+[19227.718747] 	 (t=1185396 jiffies g=23044 c=23043 q=1256)
+[19227.718782] 	2-....: (324942 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=138900 
+[19227.770272] 	(detected by 3, t=1185396 jiffies, g=23044, c=23043, q=1256)
+[19251.668927] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19279.656358] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19307.666320] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19335.701552] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19363.703144] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19391.118978] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19407.701869] INFO: rcu_sched self-detected stall on CPU
+[19407.702465] INFO: rcu_sched detected stalls on CPUs/tasks:
+[19407.717961] 	2-....: (338439 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=144636 
+[19407.767725] 	 (t=1230407 jiffies g=23044 c=23043 q=1264)
+[19407.767827] 	2-....: (338439 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=144636 
+[19407.819635] 	(detected by 3, t=1230407 jiffies, g=23044, c=23043, q=1264)
+[19435.117615] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19463.793666] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19491.791737] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19519.117605] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19547.122394] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19575.135972] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19587.786365] INFO: rcu_sched self-detected stall on CPU
+[19587.790085] INFO: rcu_sched detected stalls on CPUs/tasks:
+[19587.800837] 	2-....: (352630 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=150638 
+[19587.850601] 	 (t=1275422 jiffies g=23044 c=23043 q=1268)
+[19587.850679] 	2-....: (352630 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=150638 
+[19587.914951] 	(detected by 3, t=1275422 jiffies, g=23044, c=23043, q=1268)
+[19611.153985] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19639.167861] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19667.182210] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19695.792963] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19723.209970] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19751.873205] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19767.919549] INFO: rcu_sched self-detected stall on CPU
+[19767.920214] INFO: rcu_sched detected stalls on CPUs/tasks:
+[19767.939964] 	2-....: (365544 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=156150 
+[19767.999973] 	 (t=1320432 jiffies g=23044 c=23043 q=1276)
+[19768.000030] 	2-....: (365544 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=156150 
+[19768.074241] 	(detected by 3, t=1320432 jiffies, g=23044, c=23043, q=1276)
+[19791.231667] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19819.965811] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[19847.953143] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19875.189472] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19903.962473] watchdog: BUG: soft lockup - CPU#2 stuck for 24s! [dockerd:22239]
+[19931.161837] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19947.965056] INFO: rcu_sched self-detected stall on CPU
+[19947.965321] INFO: rcu_sched detected stalls on CPUs/tasks:
+[19947.989664] 	2-....: (377060 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=161101 
+[19947.989667] 	 (t=1365463 jiffies g=23044 c=23043 q=1280)
+[19948.007440] 	2-....: (377060 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=161101 
+[19948.093279] 	(detected by 3, t=1365463 jiffies, g=23044, c=23043, q=1280)
+[19971.970679] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[19999.998787] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20027.124810] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20055.124647] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20083.125450] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [dockerd:22239]
+[20111.124979] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20127.944615] INFO: rcu_sched self-detected stall on CPU
+[20127.961927] 	2-....: (390127 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=166744 
+[20128.015007] 	 (t=1410466 jiffies g=23044 c=23043 q=1288)
+[20155.126677] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20183.124735] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20211.125115] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[20240.089276] watchdog: BUG: soft lockup - CPU#2 stuck for 24s! [dockerd:22239]
+[20267.149423] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[20295.162586] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20308.091223] INFO: rcu_sched self-detected stall on CPU
+[20308.093220] INFO: rcu_sched detected stalls on CPUs/tasks:
+[20308.110113] 	2-....: (401556 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=171687 
+[20308.158575] 	 (t=1455491 jiffies g=23044 c=23043 q=1294)
+[20308.158665] 	2-....: (401556 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=171687 
+[20308.212551] 	(detected by 3, t=1455491 jiffies, g=23044, c=23043, q=1294)
+[20335.182772] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20363.196609] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20391.212324] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20419.225029] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20448.155333] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[20476.166864] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20488.182726] INFO: rcu_sched self-detected stall on CPU
+[20488.183691] INFO: rcu_sched detected stalls on CPUs/tasks:
+[20488.197144] 	2-....: (414223 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=177099 
+[20488.197148] 	 (t=1500504 jiffies g=23044 c=23043 q=1300)
+[20488.214726] 	2-....: (414223 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=177099 
+[20488.305659] 	(detected by 3, t=1500504 jiffies, g=23044, c=23043, q=1300)
+[20515.212556] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[20543.203026] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20571.248884] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20599.247749] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20627.250090] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20655.248298] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20668.248179] INFO: rcu_sched self-detected stall on CPU
+[20668.251883] INFO: rcu_sched detected stalls on CPUs/tasks:
+[20668.265804] 	2-....: (426401 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=182283 
+[20668.311564] 	 (t=1545542 jiffies g=23044 c=23043 q=1306)
+[20668.311599] 	2-....: (426401 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=182283 
+[20668.392433] 	(detected by 3, t=1545542 jiffies, g=23044, c=23043, q=1306)
+[20695.263239] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20723.260830] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[20751.249295] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[20779.278434] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[20807.284491] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[20835.292418] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[20848.290236] INFO: rcu_sched self-detected stall on CPU
+[20848.292075] INFO: rcu_sched detected stalls on CPUs/tasks:
+[20848.305114] 	2-....: (437104 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=186952 
+[20848.366132] 	 (t=1590552 jiffies g=23044 c=23043 q=1312)
+[20848.366232] 	2-....: (437104 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=186952 
+[20848.445457] 	(detected by 3, t=1590552 jiffies, g=23044, c=23043, q=1312)
+[20875.295080] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20903.123559] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20931.326495] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20959.330203] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[20987.330419] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21015.326702] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21028.340969] INFO: rcu_sched self-detected stall on CPU
+[21028.343540] INFO: rcu_sched detected stalls on CPUs/tasks:
+[21028.370618] 	2-....: (448441 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=191862 
+[21028.433502] 	 (t=1635565 jiffies g=23044 c=23043 q=1318)
+[21028.433627] 	2-....: (448441 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=191862 
+[21028.510260] 	(detected by 3, t=1635565 jiffies, g=23044, c=23043, q=1318)
+[21055.337499] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21083.327726] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21111.374223] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21139.385543] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21167.375320] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21195.416769] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21208.405087] INFO: rcu_sched self-detected stall on CPU
+[21208.407533] INFO: rcu_sched detected stalls on CPUs/tasks:
+[21208.422150] 	2-....: (463505 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=198284 
+[21208.481655] 	 (t=1680581 jiffies g=23044 c=23043 q=1324)
+[21208.481688] 	2-....: (463505 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=198284 
+[21208.561662] 	(detected by 3, t=1680581 jiffies, g=23044, c=23043, q=1324)
+[21235.410496] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21263.407953] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21291.412334] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21313.271917] watchdog: BUG: soft lockup - CPU#1 stuck for 3353s! [sh:28088]
+[21319.419336] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21347.416056] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21375.123481] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21388.415644] INFO: rcu_sched self-detected stall on CPU
+[21388.432463] 	2-....: (475737 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=203591 
+[21388.465499] 	 (t=1725584 jiffies g=23044 c=23043 q=1514)
+[21415.417175] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21443.421050] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21471.451959] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21499.451182] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21527.452552] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21555.466924] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21568.485309] INFO: rcu_sched self-detected stall on CPU
+[21568.485431] INFO: rcu_sched detected stalls on CPUs/tasks:
+[21568.502387] 	2-....: (486709 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=208373 
+[21568.576167] 	 (t=1770592 jiffies g=23044 c=23043 q=1520)
+[21568.576286] 	2-....: (486709 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=208373 
+[21568.653032] 	(detected by 3, t=1770592 jiffies, g=23044, c=23043, q=1520)
+[21595.484861] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21623.498412] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21651.498888] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21679.501967] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21707.512064] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21735.542712] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21748.555852] INFO: rcu_sched self-detected stall on CPU
+[21748.575139] 	2-....: (499790 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=213965 
+[21748.612255] 	 (t=1815595 jiffies g=23044 c=23043 q=1526)
+[21775.530372] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21803.192422] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21831.589467] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21859.586200] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21887.578936] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21915.578790] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[21928.608068] INFO: rcu_sched self-detected stall on CPU
+[21928.609135] INFO: rcu_sched detected stalls on CPUs/tasks:
+[21928.621216] 	2-....: (512308 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=219330 
+[21928.621219] 	 (t=1860630 jiffies g=23044 c=23043 q=1532)
+[21928.636052] 	2-....: (512308 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=219330 
+[21928.701258] 	(detected by 3, t=1860630 jiffies, g=23044, c=23043, q=1532)
+[21955.126117] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[21983.626566] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22011.655539] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22039.665988] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22067.656191] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22095.126037] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22108.666936] INFO: rcu_sched self-detected stall on CPU
+[22108.670575] INFO: rcu_sched detected stalls on CPUs/tasks:
+[22108.691247] 	2-....: (523808 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=224259 
+[22108.691249] 	 (t=1905646 jiffies g=23044 c=23043 q=1538)
+[22108.711840] 	2-....: (523808 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=224259 
+[22108.789151] 	(detected by 3, t=1905646 jiffies, g=23044, c=23043, q=1538)
+[22135.670539] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22163.702009] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22191.703078] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22219.126423] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22247.126158] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22275.704402] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22288.702639] INFO: rcu_sched self-detected stall on CPU
+[22288.702736] INFO: rcu_sched detected stalls on CPUs/tasks:
+[22288.729370] 	2-....: (535346 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=229211 
+[22288.798496] 	 (t=1950655 jiffies g=23044 c=23043 q=1544)
+[22288.798615] 	2-....: (535346 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=229211 
+[22288.894963] 	(detected by 3, t=1950655 jiffies, g=23044, c=23043, q=1544)
+[22315.702728] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22343.705321] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22371.703638] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22399.126412] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22427.702266] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22455.702189] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22468.732433] INFO: rcu_sched self-detected stall on CPU
+[22468.734543] INFO: rcu_sched detected stalls on CPUs/tasks:
+[22468.753947] 	2-....: (545604 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=233592 
+[22468.809668] 	 (t=1995662 jiffies g=23044 c=23043 q=1550)
+[22468.809737] 	2-....: (545604 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=233592 
+[22468.883660] 	(detected by 3, t=1995662 jiffies, g=23044, c=23043, q=1550)
+[22495.761713] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22523.126143] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22551.840795] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22579.826076] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22607.126017] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22635.126345] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22648.830524] INFO: rcu_sched self-detected stall on CPU
+[22648.834179] INFO: rcu_sched detected stalls on CPUs/tasks:
+[22648.850404] 	2-....: (558489 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=239095 
+[22648.897075] 	 (t=2040687 jiffies g=23044 c=23043 q=1556)
+[22648.897106] 	2-....: (558489 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=239095 
+[22648.958948] 	(detected by 3, t=2040687 jiffies, g=23044, c=23043, q=1556)
+[22675.859097] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22703.874666] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22731.905864] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22759.906916] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22787.905467] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[22815.126583] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22828.905450] INFO: rcu_sched self-detected stall on CPU
+[22828.906304] INFO: rcu_sched detected stalls on CPUs/tasks:
+[22828.919973] 	2-....: (570847 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=244375 
+[22828.961367] 	 (t=2085705 jiffies g=23044 c=23043 q=1562)
+[22828.961449] 	2-....: (570847 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=244375 
+[22829.017269] 	(detected by 3, t=2085705 jiffies, g=23044, c=23043, q=1562)
+[22855.126334] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22883.126276] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22911.937918] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22939.126217] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [dockerd:22239]
+[22967.126143] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[22995.951905] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23008.962349] INFO: rcu_sched self-detected stall on CPU
+[23008.962678] INFO: rcu_sched detected stalls on CPUs/tasks:
+[23008.979006] 	2-....: (582895 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=249561 
+[23009.025637] 	 (t=2130720 jiffies g=23044 c=23043 q=1568)
+[23009.025756] 	2-....: (582895 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=249561 
+[23009.088090] 	(detected by 3, t=2130720 jiffies, g=23044, c=23043, q=1568)
+[23035.965640] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23064.013101] watchdog: BUG: soft lockup - CPU#2 stuck for 24s! [dockerd:22239]
+[23091.127355] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23120.001799] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23148.013958] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23175.126835] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23189.044169] INFO: rcu_sched self-detected stall on CPU
+[23189.044615] INFO: rcu_sched detected stalls on CPUs/tasks:
+[23189.063243] 	2-....: (595240 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=254803 
+[23189.124991] 	 (t=2175740 jiffies g=23044 c=23043 q=1574)
+[23189.125133] 	2-....: (595240 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=254803 
+[23189.192016] 	(detected by 3, t=2175740 jiffies, g=23044, c=23043, q=1574)
+[23216.045416] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23244.032741] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23272.030928] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23300.031451] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23327.127023] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23355.126082] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23369.090731] INFO: rcu_sched self-detected stall on CPU
+[23369.096421] INFO: rcu_sched detected stalls on CPUs/tasks:
+[23369.113918] 	2-....: (607358 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=260003 
+[23369.113920] 	 (t=2220752 jiffies g=23044 c=23043 q=1580)
+[23369.128536] 	2-....: (607358 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=260003 
+[23369.275509] 	(detected by 3, t=2220752 jiffies, g=23044, c=23043, q=1580)
+[23395.126144] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23423.126229] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23451.126293] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23479.129000] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23507.126927] watchdog: BUG: soft lockup - CPU#2 stuck for 21s! [dockerd:22239]
+[23535.126823] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23549.102104] INFO: rcu_sched self-detected stall on CPU
+[23549.130236] 	2-....: (619751 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=265323 
+[23549.174206] 	 (t=2265755 jiffies g=23044 c=23043 q=1586)
+[23575.129003] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23603.138376] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23631.170160] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23659.171713] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23687.202890] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23715.202111] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23729.203401] INFO: rcu_sched self-detected stall on CPU
+[23729.206386] INFO: rcu_sched detected stalls on CPUs/tasks:
+[23729.215668] 	2-....: (631595 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=270394 
+[23729.255376] 	 (t=2310780 jiffies g=23044 c=23043 q=1592)
+[23729.255415] 	2-....: (631595 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=270394 
+[23729.295081] 	(detected by 3, t=2310780 jiffies, g=23044, c=23043, q=1592)
+[23755.201798] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23783.216173] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23811.203396] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23839.214570] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23867.212465] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23895.261679] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[23909.258972] INFO: rcu_sched self-detected stall on CPU
+[23909.262652] INFO: rcu_sched detected stalls on CPUs/tasks:
+[23909.281450] 	2-....: (644572 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=275973 
+[23909.281455] 	 (t=2355794 jiffies g=23044 c=23043 q=1598)
+[23909.302638] 	2-....: (644572 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=275973 
+[23909.408766] 	(detected by 3, t=2355794 jiffies, g=23044, c=23043, q=1598)
+[23935.259924] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23963.249489] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[23991.248531] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24019.280158] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24047.295974] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24075.331241] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24089.327309] INFO: rcu_sched self-detected stall on CPU
+[24089.328008] INFO: rcu_sched detected stalls on CPUs/tasks:
+[24089.352630] 	2-....: (656749 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=281239 
+[24089.407547] 	 (t=2400811 jiffies g=23044 c=23043 q=1606)
+[24089.407669] 	2-....: (656749 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=281239 
+[24089.475507] 	(detected by 3, t=2400811 jiffies, g=23044, c=23043, q=1606)
+[24115.328177] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24143.326778] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24171.386308] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24199.374498] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24227.403528] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24255.406563] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24269.416363] INFO: rcu_sched self-detected stall on CPU
+[24269.418116] INFO: rcu_sched detected stalls on CPUs/tasks:
+[24269.441926] 	2-....: (667364 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=285784 
+[24269.527495] 	 (t=2445833 jiffies g=23044 c=23043 q=1610)
+[24269.527619] 	2-....: (667364 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=285784 
+[24269.606409] 	(detected by 3, t=2445833 jiffies, g=23044, c=23043, q=1610)
+[24295.405623] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24323.453087] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24351.458685] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24379.452754] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24407.454562] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24435.462512] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24449.452195] INFO: rcu_sched self-detected stall on CPU
+[24449.454319] INFO: rcu_sched detected stalls on CPUs/tasks:
+[24449.469053] 	2-....: (678517 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=290568 
+[24449.538845] 	 (t=2490842 jiffies g=23044 c=23043 q=1618)
+[24449.538875] 	2-....: (678517 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=290568 
+[24449.613112] 	(detected by 3, t=2490842 jiffies, g=23044, c=23043, q=1618)
+[24475.465683] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24503.462375] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24531.462811] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24559.452334] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24587.452523] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24615.126050] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24629.462053] INFO: rcu_sched self-detected stall on CPU
+[24629.476996] 	2-....: (692305 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=296493 
+[24629.528109] 	 (t=2535845 jiffies g=23044 c=23043 q=1622)
+[24655.499708] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24683.512653] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24711.156500] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24739.499543] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24767.498507] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24795.531170] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24809.553944] INFO: rcu_sched self-detected stall on CPU
+[24809.573586] 	2-....: (704785 ticks this GP) idle=386/140000000000001/0 softirq=54335/54335 fqs=301871 
+[24809.606295] 	 (t=2580848 jiffies g=23044 c=23043 q=1630)
+[24835.544368] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [dockerd:22239]
+[24863.577340] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
+[24891.578074] watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [dockerd:22239]
